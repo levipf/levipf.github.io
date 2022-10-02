@@ -12,7 +12,7 @@
     <title>Document</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="index.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -27,25 +27,33 @@
     <div class="myWeek1">
         <h1>Data Science for Economists.</h1>
         
-        <h3>Crypto</h3>
-        <p>The first chart looks at the price of Bitcoin in USD</p>
-        <div class="chart" id="Chart1"></div>
+        <h3>Inflation</h3>
+        <p>The first chart compares three measures of inflation in the UK.</p>
+        <div class="chart" id="chart1"></div>
 
-        <h3>Productivity puzzle</h3>
-        <p>My second chart looks at productivity in the UK</p>
-        <div class="chart" id="Chart2"> </div>
+        <h3>Extreme Demographics</h3>
+        <p>The second chart looks at the aging population</p>
+        <div class="chart" id="chart2"> </div>
+   
+        <!-- <h3>Bitcoin</h3>
+        <p>The second chart looks at the price of Bitcoin in USD</p>
+        <div class="chart" id="chart2"> </div> -->
     </div> 
+       
 </body>
 
 
 <script>
     //Define charts:
-    var myChart1 = "chartcrypto1.json";
-    var myChart2 = "chart2_ukProductivity.json";
+    var myChart1 = "chartINF2.json";
+    var myChart2 = "chartextreme1.json";
 
-    // Embed charts:
-    vegaEmbed('#Chart1', myChart1);
-    vegaEmbed('#Chart2', myChart2);
+ // Embed charts:
+ vegaEmbed('#chart1', myChart1);
+ vegaEmbed('#chart2', myChart2);
+    // vegaEmbed('#chart3', myChart3);
+    // vegaEmbed('#chart4', myChart4);
+    // vegaEmbed('#chart5', myChart5);
 </script>
 
 </html>
