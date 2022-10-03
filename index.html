@@ -12,7 +12,7 @@
     <title>Document</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -35,9 +35,9 @@
         <p>The second chart looks at the aging population</p>
         <div class="chart" id="chart2"> </div>
    
-        <!-- <h3>Bitcoin</h3>
-        <p>The second chart looks at the price of Bitcoin in USD</p>
-        <div class="chart" id="chart2"> </div> -->
+        <h3>Unemployment</h3>
+        <p>The third chart looks at the unemployment level in the UK</p>
+        <div class="chart" id="chart3"> </div> -->
     </div> 
        
 </body>
@@ -47,10 +47,12 @@
     //Define charts:
     var myChart1 = "chartINF2.json";
     var myChart2 = "chartextreme1.json";
+    var myChart3 = "chartunemployment1.json";
 
  // Embed charts:
  vegaEmbed('#chart1', myChart1);
  vegaEmbed('#chart2', myChart2);
+ vegaEmbed('#chart3', myChart3);
     // vegaEmbed('#chart3', myChart3);
     // vegaEmbed('#chart4', myChart4);
     // vegaEmbed('#chart5', myChart5);
