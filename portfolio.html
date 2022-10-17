@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Document</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+
+<body>
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="myWeek1">
+        <h1>Data Science 2022 - Levi Freud</h1>
+        <a href="index.html">My Project</a>
+        <a href="https://github.com/levipf">GitHub</a>      
+
+        <h3>Week 1:</h3>
+        <p>Embed some interactive charts onto your website.</p>
+
+        <h3>Inflation</h3>
+        <p>The first chart compares three measures of inflation in the UK.</p>
+        <div class="chart" id="chart1"></div>
+
+        <h3>Extreme Demographics</h3>
+        <p>The second chart looks at the aging population</p>
+        <div class="chart" id="chart2"> </div>
+   
+        <h3>Unemployment</h3>
+        <p>The third chart looks at the unemployment level in the UK</p>
+        <div class="chart" id="chart3"> </div>
+    </div>    
+
+    <div class="myWeek2">
+        <h3>Week 2:</h3>
+        <p>Build three live charts and embed them onto your page. Run the first two directly from your GitHub, and deliver the third chart directly through an API.</p>
+
+        <h3>Total IMF Credit Outstanding</h3>
+        <div class="chart" id="chart4"></div>
+
+
+        <h3>Total IMF Credit Outstanding as a share of World GDP</h3>
+        <div class="chart" id="chart5"></div>
+
+    </div> 
+
+    <div class="myWeek3">
+        <h3>Week 3:</h3>
+        <p>Create and embed an original chart, running it directly through an API.</p>
+
+        <h3>Covid-19 deaths in England over time</h3>
+        <div class="chart" id="chart6"></div>
+
+
+    </div> 
+       
+</body>
+
+
+<script>
+    //Define charts:
+    var myChart1 = "chartINF2.json";
+    var myChart2 = "chartextreme1.json";
+    var myChart3 = "chartunemployment1.json";
+    var myChart4 = "imflending.json"
+    var myChart5 = "imflendingshare.json"
+    var myChart6 = "covid_cases.json"
+
+ // Embed charts:
+ vegaEmbed('#chart1', myChart1);
+ vegaEmbed('#chart2', myChart2);
+ vegaEmbed('#chart3', myChart3);
+ vegaEmbed('#chart4', myChart4);
+ vegaEmbed('#chart5', myChart5);
+ vegaEmbed('#chart6', myChart6);
+
+
+</script>
+
+</html>
+
+
