@@ -1,0 +1,267 @@
+Autonomous community,Year,Household income (€)
+Andalucia,2021,25601
+Andalucia,2020,25909
+Andalucia,2019,23826
+Andalucia,2018,24091
+Andalucia,2017,23699
+Andalucia,2016,21966
+Andalucia,2015,20851
+Andalucia,2014,21332
+Andalucia,2013,22450
+Andalucia,2012,23852
+Andalucia,2011,23854
+Andalucia,2010,25543
+Andalucia,2009,26125
+Andalucia,2008,25248
+Aragon,2021,32067
+Aragon,2020,31529
+Aragon,2019,29672
+Aragon,2018,28886
+Aragon,2017,29098
+Aragon,2016,28019
+Aragon,2015,30058
+Aragon,2014,29120
+Aragon,2013,29311
+Aragon,2012,29339
+Aragon,2011,29066
+Aragon,2010,30166
+Aragon,2009,31598
+Aragon,2008,29506
+Asturias,2021,28369
+Asturias,2020,28284
+Asturias,2019,27897
+Asturias,2018,27069
+Asturias,2017,27454
+Asturias,2016,27020
+Asturias,2015,25909
+Asturias,2014,25623
+Asturias,2013,25704
+Asturias,2012,27364
+Asturias,2011,27817
+Asturias,2010,30226
+Asturias,2009,30881
+Asturias,2008,29473
+Baleares,2021,29368
+Baleares,2020,33115
+Baleares,2019,32179
+Baleares,2018,34007
+Baleares,2017,32163
+Baleares,2016,30859
+Baleares,2015,27284
+Baleares,2014,26923
+Baleares,2013,26307
+Baleares,2012,28101
+Baleares,2011,28590
+Baleares,2010,29405
+Baleares,2009,30672
+Baleares,2008,28981
+Canarias,2021,26392
+Canarias,2020,25855
+Canarias,2019,24565
+Canarias,2018,23048
+Canarias,2017,22790
+Canarias,2016,22450
+Canarias,2015,22261
+Canarias,2014,21539
+Canarias,2013,22037
+Canarias,2012,22084
+Canarias,2011,22828
+Canarias,2010,24717
+Canarias,2009,24300
+Canarias,2008,24510
+Cantabria,2021,30447
+Cantabria,2020,30309
+Cantabria,2019,29144
+Cantabria,2018,26888
+Cantabria,2017,27024
+Cantabria,2016,25787
+Cantabria,2015,25282
+Cantabria,2014,23905
+Cantabria,2013,24188
+Cantabria,2012,25764
+Cantabria,2011,26431
+Cantabria,2010,28237
+Cantabria,2009,31234
+Cantabria,2008,29576
+Castilla-Leon,2021,28890
+Castilla-Leon,2020,29125
+Castilla-Leon,2019,27679
+Castilla-Leon,2018,27665
+Castilla-Leon,2017,26113
+Castilla-Leon,2016,25255
+Castilla-Leon,2015,24838
+Castilla-Leon,2014,24587
+Castilla-Leon,2013,25717
+Castilla-Leon,2012,26377
+Castilla-Leon,2011,26509
+Castilla-Leon,2010,27248
+Castilla-Leon,2009,27980
+Castilla-Leon,2008,26525
+Castilla-La Mancha,2021,26060
+Castilla-La Mancha,2020,26722
+Castilla-La Mancha,2019,24853
+Castilla-La Mancha,2018,24401
+Castilla-La Mancha,2017,23159
+Castilla-La Mancha,2016,22473
+Castilla-La Mancha,2015,21939
+Castilla-La Mancha,2014,22271
+Castilla-La Mancha,2013,22256
+Castilla-La Mancha,2012,23515
+Castilla-La Mancha,2011,24318
+Castilla-La Mancha,2010,26717
+Castilla-La Mancha,2009,26388
+Castilla-La Mancha,2008,24974
+Cataluña,2021,34982
+Cataluña,2020,35030
+Cataluña,2019,33321
+Cataluña,2018,32763
+Cataluña,2017,31411
+Cataluña,2016,31339
+Cataluña,2015,30655
+Cataluña,2014,30407
+Cataluña,2013,30423
+Cataluña,2012,30885
+Cataluña,2011,31201
+Cataluña,2010,33297
+Cataluña,2009,33064
+Cataluña,2008,32561
+Valencia,2021,27603
+Valencia,2020,27948
+Valencia,2019,26176
+Valencia,2018,25207
+Valencia,2017,24034
+Valencia,2016,22744
+Valencia,2015,22132
+Valencia,2014,22392
+Valencia,2013,23189
+Valencia,2012,25122
+Valencia,2011,26012
+Valencia,2010,27057
+Valencia,2009,27100
+Valencia,2008,25802
+Extremadura,2021,22947
+Extremadura,2020,22250
+Extremadura,2019,21611
+Extremadura,2018,21006
+Extremadura,2017,20395
+Extremadura,2016,21671
+Extremadura,2015,21092
+Extremadura,2014,19364
+Extremadura,2013,21078
+Extremadura,2012,20895
+Extremadura,2011,22487
+Extremadura,2010,23349
+Extremadura,2009,24054
+Extremadura,2008,21756
+Galicia,2021,27698
+Galicia,2020,27862
+Galicia,2019,27541
+Galicia,2018,27658
+Galicia,2017,26533
+Galicia,2016,25980
+Galicia,2015,25614
+Galicia,2014,26001
+Galicia,2013,25939
+Galicia,2012,26648
+Galicia,2011,27294
+Galicia,2010,27986
+Galicia,2009,27029
+Galicia,2008,25859
+Madrid,2021,37687
+Madrid,2020,37051
+Madrid,2019,35587
+Madrid,2018,33055
+Madrid,2017,32451
+Madrid,2016,31370
+Madrid,2015,31243
+Madrid,2014,31587
+Madrid,2013,32632
+Madrid,2012,33917
+Madrid,2011,34529
+Madrid,2010,35452
+Madrid,2009,36401
+Madrid,2008,33889
+Murcia,2021,27027
+Murcia,2020,26925
+Murcia,2019,24448
+Murcia,2018,24801
+Murcia,2017,23574
+Murcia,2016,22425
+Murcia,2015,21529
+Murcia,2014,21269
+Murcia,2013,23011
+Murcia,2012,23901
+Murcia,2011,23990
+Murcia,2010,25446
+Murcia,2009,26757
+Murcia,2008,26995
+Navarra,2021,38086
+Navarra,2020,37728
+Navarra,2019,34612
+Navarra,2018,33556
+Navarra,2017,33431
+Navarra,2016,33167
+Navarra,2015,32979
+Navarra,2014,33047
+Navarra,2013,34320
+Navarra,2012,35783
+Navarra,2011,37221
+Navarra,2010,37433
+Navarra,2009,37644
+Navarra,2008,35370
+Pais Vasco,2021,36887
+Pais Vasco,2020,37598
+Pais Vasco,2019,36399
+Pais Vasco,2018,35049
+Pais Vasco,2017,34203
+Pais Vasco,2016,34054
+Pais Vasco,2015,33053
+Pais Vasco,2014,34240
+Pais Vasco,2013,34487
+Pais Vasco,2012,33891
+Pais Vasco,2011,34676
+Pais Vasco,2010,36211
+Pais Vasco,2009,37707
+Pais Vasco,2008,36110
+La Rioja,2021,30598
+La Rioja,2020,32096
+La Rioja,2019,30162
+La Rioja,2018,28549
+La Rioja,2017,28775
+La Rioja,2016,27599
+La Rioja,2015,26604
+La Rioja,2014,26666
+La Rioja,2013,25643
+La Rioja,2012,26766
+La Rioja,2011,26238
+La Rioja,2010,27104
+La Rioja,2009,29029
+La Rioja,2008,27835
+Ceuta,2021,31494
+Ceuta,2020,28824
+Ceuta,2019,30432
+Ceuta,2018,28700
+Ceuta,2017,29117
+Ceuta,2016,30180
+Ceuta,2015,28280
+Ceuta,2014,30336
+Ceuta,2013,31453
+Ceuta,2012,32763
+Ceuta,2011,36544
+Ceuta,2010,33477
+Ceuta,2009,31524
+Ceuta,2008,29776
+Melilla,2021,36038
+Melilla,2020,37138
+Melilla,2019,37552
+Melilla,2018,41714
+Melilla,2017,34089
+Melilla,2016,35808
+Melilla,2015,31526
+Melilla,2014,35741
+Melilla,2013,36196
+Melilla,2012,39173
+Melilla,2011,36711
+Melilla,2010,37349
+Melilla,2009,34760
+Melilla,2008,33986
