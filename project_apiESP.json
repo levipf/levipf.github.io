@@ -1,0 +1,1723 @@
+{
+    "code": "HFA_617",
+    "short_name": "GINI coefficient (income distribution)",
+    "full_name": "GINI coefficient (income distribution)",
+    "updated_on": "2022-09-01T08:50:47.773",
+    "data_updated_on": "2022-09-01T08:50:47.773",
+    "metadata_updated_on": "2019-08-14T07:31:22.963",
+    "notes_updated_on": null,
+    "url": "https://dw.euro.who.int/api/v3/measures/HFA_617",
+    "data_mask": -1,
+    "export_url": "https://dw.euro.who.int/api/v3/export/HFA_617",
+    "notes": [
+        {
+            "note_type": "MEASURE",
+            "values": [
+                {
+                    "code": "HFA_617",
+                    "value": "GINI coefficient (income distribution)<br/>Indicator code: GINI<br/><br/>GINI coefficient (income distribution).<br/><br/>GINI coefficient rates  for (AUT,  BEL, BUL, SWI, CYP, CZH, DEU, DEN, EST, SPA, FIN, FRA,  CRO, HUN, IRE, ICE, ITA, LTU, LUX, LVA, FYM, MAT, NET,  NOR, POL, POR, ROM, SRB, SWE, SVN, SVK, TUR) have been extracted from Eurostat. Rates for (AND, ALB, ARM, AZE, BIH, BLR, UNK, GEO, GRE, ISR, KGZ, KAZ, MON, MDA,  MNE,    RUS,  SMR,  TJK, TKM, UKR, UZB) have   been extracted  from the World Bank. World Bank estimates are in average 7% higher than Eurostat rates. Rates starting in 1995 have been included.<br/><br/>Data source: Gini coefficient of equalized disposable income (source: SILC, Eurostat) and GINI index (World Bank estimate).<br/><br/>"
+                }
+            ]
+        }
+    ],
+    "classifications": [
+        {
+            "short_name": "HFA-DB classification",
+            "full_name": "HFA database indicator classification",
+            "values": [
+                {
+                    "label": "Demographic and socio-economic indicators",
+                    "code": "A00",
+                    "description": "",
+                    "external_reference": "",
+                    "external_code": "",
+                    "level": 2,
+                    "sort_order": 0,
+                    "url": "https://dw.euro.who.int/api/v3/categories/A00",
+                    "updated_on": "2016-02-16T12:18:50.657"
+                }
+            ],
+            "code": "A",
+            "description": "Indicator classification as used by the WHO European Health for All database.",
+            "external_reference": "HFA",
+            "external_code": "HFADB",
+            "level": 1,
+            "sort_order": 1,
+            "url": "https://dw.euro.who.int/api/v3/categories/A",
+            "updated_on": "2017-07-12T09:32:37.53"
+        },
+        {
+            "short_name": "HFA explorer",
+            "full_name": "Health for All explorer",
+            "values": [
+                {
+                    "label": "Socio-economic",
+                    "code": "L01",
+                    "description": "",
+                    "external_reference": "",
+                    "external_code": "new",
+                    "level": 2,
+                    "sort_order": 1,
+                    "url": "https://dw.euro.who.int/api/v3/categories/L01",
+                    "updated_on": "2017-07-05T13:42:53.057"
+                }
+            ],
+            "code": "L",
+            "description": "",
+            "external_reference": "",
+            "external_code": "",
+            "level": 1,
+            "sort_order": 12,
+            "url": "https://dw.euro.who.int/api/v3/categories/L",
+            "updated_on": "2017-07-05T13:42:53.107"
+        }
+    ],
+    "metadata": [
+        {
+            "code": "UNIT_TYPE",
+            "label": "Unit",
+            "value": {
+                "code": "SCORE",
+                "label": "score"
+            },
+            "valid_values": [
+                {
+                    "code": "ACCIDENTS_100K",
+                    "label": "accidents per 100 000 population",
+                    "sort_order": 1
+                },
+                {
+                    "code": "ADM_100K",
+                    "label": "admissions per 100 000 population",
+                    "sort_order": 2
+                },
+                {
+                    "code": "BEDS_100K",
+                    "label": "beds per 100 000 population",
+                    "sort_order": 3
+                },
+                {
+                    "code": "BIRTHS_1000",
+                    "label": "births per 1000 population",
+                    "sort_order": 4
+                },
+                {
+                    "code": "BIRTHS_WOMAN",
+                    "label": "births per woman",
+                    "sort_order": 5
+                },
+                {
+                    "code": "BQ_PER_M3",
+                    "label": "Bq/m3",
+                    "sort_order": 6
+                },
+                {
+                    "code": "CASES_100K",
+                    "label": "cases per 100 000 population",
+                    "sort_order": 7
+                },
+                {
+                    "code": "CASES_100K_CHILD",
+                    "label": "cases per 100 000 child population",
+                    "sort_order": 10
+                },
+                {
+                    "code": "CONTACTS_PERS",
+                    "label": "contacts per person",
+                    "sort_order": 11
+                },
+                {
+                    "code": "DAYS_PEMP_PYEAR",
+                    "label": "days per employee per year",
+                    "sort_order": 12
+                },
+                {
+                    "code": "DISCHARGES_100K",
+                    "label": "hospital discharges per 100 000 persons",
+                    "sort_order": 13
+                },
+                {
+                    "code": "DISCHARGES_100POP",
+                    "label": "hospital discharges per 100 persons",
+                    "sort_order": 14
+                },
+                {
+                    "code": "DTH_1000",
+                    "label": "deaths per 1000 population",
+                    "sort_order": 15
+                },
+                {
+                    "code": "DTH_1000BRTH",
+                    "label": "deaths per 1000 births",
+                    "sort_order": 16
+                },
+                {
+                    "code": "DTH_1000LBRTH",
+                    "label": "deaths per 1000 live births",
+                    "sort_order": 17
+                },
+                {
+                    "code": "DTH_100K",
+                    "label": "deaths per 100 000",
+                    "sort_order": 18
+                },
+                {
+                    "code": "DTH_100K_LBRTH",
+                    "label": "deaths per 100 000 live births",
+                    "sort_order": 19
+                },
+                {
+                    "code": "DTH_1MIO",
+                    "label": "deaths per 1 000 000 population",
+                    "sort_order": 20
+                },
+                {
+                    "code": "DTH_1MIO_CHILD",
+                    "label": "deaths per 1 000 000 child population",
+                    "sort_order": 21
+                },
+                {
+                    "code": "EQUIP_100K",
+                    "label": "equipments per 100 000 population",
+                    "sort_order": 22
+                },
+                {
+                    "code": "FACIL_100K",
+                    "label": "facilities per 100 000 population",
+                    "sort_order": 23
+                },
+                {
+                    "code": "GRAMM_PPERS_PDAY",
+                    "label": "grammes per person per day",
+                    "sort_order": 24
+                },
+                {
+                    "code": "INJ_100K",
+                    "label": "injuries per 100 000 population",
+                    "sort_order": 25
+                },
+                {
+                    "code": "INJ_100K_VEHxYEARS",
+                    "label": "injures per 100 000 motor vehicles",
+                    "sort_order": 26
+                },
+                {
+                    "code": "INJ_100KxYEARS",
+                    "label": "injures per 100 000 person-years",
+                    "sort_order": 27
+                },
+                {
+                    "code": "KCAL_PPERS",
+                    "label": "kcal per person per day",
+                    "sort_order": 28
+                },
+                {
+                    "code": "KG_PPERS_PYEAR",
+                    "label": "kilograms per person per year",
+                    "sort_order": 29
+                },
+                {
+                    "code": "KM2",
+                    "label": "km2",
+                    "sort_order": 30
+                },
+                {
+                    "code": "LITRES_PCAPITA",
+                    "label": "litres per capita",
+                    "sort_order": 31
+                },
+                {
+                    "code": "MICROGR",
+                    "label": "μg",
+                    "sort_order": 32
+                },
+                {
+                    "code": "MICROGR_PER_DL",
+                    "label": "μg/dl",
+                    "sort_order": 33
+                },
+                {
+                    "code": "MICROGR_PER_GRFAT",
+                    "label": "μg/g fat",
+                    "sort_order": 34
+                },
+                {
+                    "code": "MICROGR_PER_KG_BW_PER_DAY",
+                    "label": "μg/kg bw/day",
+                    "sort_order": 35
+                },
+                {
+                    "code": "MICROGR_PER_M3",
+                    "label": "μg/m3",
+                    "sort_order": 36
+                },
+                {
+                    "code": "MICROGR_PER_M3XDAYS",
+                    "label": "μg/m3 x days",
+                    "sort_order": 37
+                },
+                {
+                    "code": "NANOGR_PER_GRFAT",
+                    "label": "ng/g fat",
+                    "sort_order": 38
+                },
+                {
+                    "code": "NUM_100K_LBIRTH",
+                    "label": "number per 100 000 live births",
+                    "sort_order": 39
+                },
+                {
+                    "code": "NUM_ACCIDENTS",
+                    "label": "number of accidents",
+                    "sort_order": 40
+                },
+                {
+                    "code": "NUM_ADMISSIONS",
+                    "label": "number of admissions",
+                    "sort_order": 41
+                },
+                {
+                    "code": "NUM_BEDS",
+                    "label": "number of beds",
+                    "sort_order": 42
+                },
+                {
+                    "code": "NUM_BIRTHS",
+                    "label": "number of births",
+                    "sort_order": 43
+                },
+                {
+                    "code": "NUM_CASES",
+                    "label": "number of cases",
+                    "sort_order": 44
+                },
+                {
+                    "code": "NUM_CIG_MIO_PCS",
+                    "label": "million pieces of cigarettes",
+                    "sort_order": 45
+                },
+                {
+                    "code": "NUM_CIG_PPERS",
+                    "label": "number of cigarettes per person",
+                    "sort_order": 46
+                },
+                {
+                    "code": "NUM_CIG_PPERS_PYEAR",
+                    "label": "Number of cigarettes per person per year",
+                    "sort_order": 47
+                },
+                {
+                    "code": "NUM_CNTR",
+                    "label": "number of countries",
+                    "sort_order": 48
+                },
+                {
+                    "code": "NUM_DAYS",
+                    "label": "number of days",
+                    "sort_order": 49
+                },
+                {
+                    "code": "NUM_DISCHARGES",
+                    "label": "number of hospital discharges",
+                    "sort_order": 50
+                },
+                {
+                    "code": "NUM_DTH",
+                    "label": "number of deaths",
+                    "sort_order": 51
+                },
+                {
+                    "code": "NUM_EQUIP",
+                    "label": "number of equipments",
+                    "sort_order": 52
+                },
+                {
+                    "code": "NUM_FACIL",
+                    "label": "number of facilities",
+                    "sort_order": 53
+                },
+                {
+                    "code": "NUM_FETUSES",
+                    "label": "number of fetuses",
+                    "sort_order": 54
+                },
+                {
+                    "code": "NUM_LBIRTH",
+                    "label": "number of live births",
+                    "sort_order": 55
+                },
+                {
+                    "code": "NUM_OUTBREAKS",
+                    "label": "number of outbreaks",
+                    "sort_order": 56
+                },
+                {
+                    "code": "NUM_PATIENTS",
+                    "label": "number of patients",
+                    "sort_order": 57
+                },
+                {
+                    "code": "NUM_PERS",
+                    "label": "number of persons",
+                    "sort_order": 58
+                },
+                {
+                    "code": "NUM_PROC",
+                    "label": "number of procedures",
+                    "sort_order": 59
+                },
+                {
+                    "code": "NUM_PROFESS",
+                    "label": "number of professionals",
+                    "sort_order": 60
+                },
+                {
+                    "code": "NUM_RESPONSES",
+                    "label": "number of responses",
+                    "sort_order": 61
+                },
+                {
+                    "code": "PERCENT",
+                    "label": "%",
+                    "sort_order": 62
+                },
+                {
+                    "code": "PERS_100K",
+                    "label": "persons per 100 000 population",
+                    "sort_order": 63
+                },
+                {
+                    "code": "PERS_KM2",
+                    "label": "persons per km2",
+                    "sort_order": 64
+                },
+                {
+                    "code": "PG_WHO_TEQ_PER_GFAT",
+                    "label": "pg WHO-TEQ/g fat",
+                    "sort_order": 65
+                },
+                {
+                    "code": "PICOGR_PER_GRFAT",
+                    "label": "pg/g fat",
+                    "sort_order": 66
+                },
+                {
+                    "code": "PPP_PER_CAPIT",
+                    "label": "PPP$ per capita",
+                    "sort_order": 67
+                },
+                {
+                    "code": "PROC_1000LBIRTH",
+                    "label": "procedures per 1000 live births",
+                    "sort_order": 68
+                },
+                {
+                    "code": "PROC_100K",
+                    "label": "procedures per 100 000 population",
+                    "sort_order": 69
+                },
+                {
+                    "code": "PROFESS_100K",
+                    "label": "health professionals per 100 000 population",
+                    "sort_order": 70
+                },
+                {
+                    "code": "SCORE",
+                    "label": "score",
+                    "sort_order": 71
+                },
+                {
+                    "code": "USD_PER_CAPITA",
+                    "label": "US$ per capita",
+                    "sort_order": 72
+                },
+                {
+                    "code": "YEARS",
+                    "label": "years",
+                    "sort_order": 73
+                },
+                {
+                    "code": "ICD_VERSION",
+                    "label": "Version used",
+                    "sort_order": 74
+                },
+                {
+                    "code": "CASES_1K_CHILD",
+                    "label": "cases per 1000 child population",
+                    "sort_order": 75
+                },
+                {
+                    "code": "CASES_10K_CHILD",
+                    "label": "cases per 10 000 child population",
+                    "sort_order": 76
+                },
+                {
+                    "code": "PROFESS_10K",
+                    "label": "Persons per 10 000 population",
+                    "sort_order": 77
+                }
+            ]
+        },
+        {
+            "code": "EXTERNID",
+            "label": "ID in the originating data source",
+            "value": {
+                "code": "0280",
+                "label": null
+            }
+        },
+        {
+            "code": "DATA_SOURCE",
+            "label": "Data source",
+            "value": {
+                "code": "HFA",
+                "label": "European Health for All database"
+            },
+            "valid_values": [
+                {
+                    "code": "H2020",
+                    "label": "Indicators for Health 2020",
+                    "sort_order": 1
+                },
+                {
+                    "code": "HFA",
+                    "label": "European Health for All database",
+                    "sort_order": 2
+                },
+                {
+                    "code": "ENHIS",
+                    "label": "Environment and Health",
+                    "sort_order": 3
+                },
+                {
+                    "code": "HBSC",
+                    "label": "Health Behaviour in School-aged Children",
+                    "sort_order": 4
+                },
+                {
+                    "code": "EHEALTH_SURVEY",
+                    "label": "eHealth survey 2015",
+                    "sort_order": 5
+                },
+                {
+                    "code": "CAH",
+                    "label": "Child and adolescent health",
+                    "sort_order": 6
+                },
+                {
+                    "code": "HLTHRES",
+                    "label": "European database on human and technical resources for health (HlthRes-DB)",
+                    "sort_order": 7
+                },
+                {
+                    "code": "HFAMDB",
+                    "label": "European mortality database (MDB)",
+                    "sort_order": 8
+                },
+                {
+                    "code": "INFLUENZA",
+                    "label": "Seasonal influenza vaccination policies and coverage",
+                    "sort_order": 9
+                },
+                {
+                    "code": "MN_SURVEY",
+                    "label": "Maternal nutrition, physical activity and weight gain during pregnancy",
+                    "sort_order": 10
+                },
+                {
+                    "code": "HEPA_SURVEY",
+                    "label": "Health-enhancing physical activity",
+                    "sort_order": 11
+                },
+                {
+                    "code": "AMR",
+                    "label": "Antimicrobial resistance",
+                    "sort_order": 12
+                },
+                {
+                    "code": "GNPR_SURVEY",
+                    "label": "Global nutrition policy survey",
+                    "sort_order": 13
+                },
+                {
+                    "code": "CAHB_SURVEY",
+                    "label": "Status of child and adolescent health policies in Europe",
+                    "sort_order": 14
+                },
+                {
+                    "code": "JMF",
+                    "label": "Joint Monitoring Framework (JMF)",
+                    "sort_order": 15
+                },
+                {
+                    "code": "UHCFP",
+                    "label": "Monitoring financial protection in the European Region in the context of universal health coverage",
+                    "sort_order": 16
+                },
+                {
+                    "code": "EPW",
+                    "label": "Indicators for European Programme of Work",
+                    "sort_order": 17
+                },
+                {
+                    "code": "REHAB",
+                    "label": "Estimating the need for rehabilitation in the WHO European Region",
+                    "sort_order": 18
+                }
+            ]
+        },
+        {
+            "code": "DATA_TYPE_REPRESENTATION",
+            "label": "Data type representation",
+            "value": {
+                "code": "SCORE",
+                "label": "Score"
+            },
+            "valid_values": [
+                {
+                    "code": "CATEGORICAL",
+                    "label": "Categorical",
+                    "sort_order": 1
+                },
+                {
+                    "code": "COUNT",
+                    "label": "Count",
+                    "sort_order": 2
+                },
+                {
+                    "code": "LOGICAL",
+                    "label": "Logical",
+                    "sort_order": 3
+                },
+                {
+                    "code": "MONEY",
+                    "label": "Money",
+                    "sort_order": 4
+                },
+                {
+                    "code": "RATE",
+                    "label": "Rate",
+                    "sort_order": 6
+                },
+                {
+                    "code": "RATIO",
+                    "label": "Ratio",
+                    "sort_order": 7
+                },
+                {
+                    "code": "SCORE",
+                    "label": "Score",
+                    "sort_order": 8
+                },
+                {
+                    "code": "STATISTIC",
+                    "label": "Statistic",
+                    "sort_order": 9
+                },
+                {
+                    "code": "CATEGORICAL_MULTI",
+                    "label": "Categorical multiple choice answer",
+                    "sort_order": 10
+                }
+            ]
+        }
+    ],
+    "attributes": [
+        {
+            "data_type": "categorical_response_ref",
+            "code": "MEASURE_TYPE",
+            "label": "Type of measure",
+            "values": [
+                {
+                    "code": "INDEX",
+                    "label": "Index",
+                    "sort_order": 28,
+                    "present": true
+                }
+            ],
+            "is_obsolete": true
+        }
+    ],
+    "dimensions": [
+        {
+            "data_type": "country_ref",
+            "code": "COUNTRY",
+            "label": "Country",
+            "values": [
+                {
+                    "code": "ALB",
+                    "iso2": "AL",
+                    "iso3": "ALB",
+                    "who_code": "ALB",
+                    "short_name": "Albania",
+                    "full_name": "Albania",
+                    "sort_order": 1,
+                    "present": false
+                },
+                {
+                    "code": "AND",
+                    "iso2": "AD",
+                    "iso3": "AND",
+                    "who_code": "AND",
+                    "short_name": "Andorra",
+                    "full_name": "Andorra",
+                    "sort_order": 2,
+                    "present": false
+                },
+                {
+                    "code": "ARM",
+                    "iso2": "AM",
+                    "iso3": "ARM",
+                    "who_code": "ARM",
+                    "short_name": "Armenia",
+                    "full_name": "Armenia",
+                    "sort_order": 3,
+                    "present": false
+                },
+                {
+                    "code": "AUT",
+                    "iso2": "AT",
+                    "iso3": "AUT",
+                    "who_code": "AUT",
+                    "short_name": "Austria",
+                    "full_name": "Austria",
+                    "sort_order": 4,
+                    "present": false
+                },
+                {
+                    "code": "AZE",
+                    "iso2": "AZ",
+                    "iso3": "AZE",
+                    "who_code": "AZE",
+                    "short_name": "Azerbaijan",
+                    "full_name": "Azerbaijan",
+                    "sort_order": 5,
+                    "present": false
+                },
+                {
+                    "code": "BLR",
+                    "iso2": "BY",
+                    "iso3": "BLR",
+                    "who_code": "BLR",
+                    "short_name": "Belarus",
+                    "full_name": "Belarus",
+                    "sort_order": 6,
+                    "present": false
+                },
+                {
+                    "code": "BEL",
+                    "iso2": "BE",
+                    "iso3": "BEL",
+                    "who_code": "BEL",
+                    "short_name": "Belgium",
+                    "full_name": "Belgium",
+                    "sort_order": 7,
+                    "present": false
+                },
+                {
+                    "code": "BIH",
+                    "iso2": "BA",
+                    "iso3": "BIH",
+                    "who_code": "BIH",
+                    "short_name": "Bosnia and Herzegovina",
+                    "full_name": "Bosnia and Herzegovina",
+                    "sort_order": 11,
+                    "present": false
+                },
+                {
+                    "code": "BGR",
+                    "iso2": "BG",
+                    "iso3": "BGR",
+                    "who_code": "BUL",
+                    "short_name": "Bulgaria",
+                    "full_name": "Bulgaria",
+                    "sort_order": 12,
+                    "present": false
+                },
+                {
+                    "code": "HRV",
+                    "iso2": "HR",
+                    "iso3": "HRV",
+                    "who_code": "CRO",
+                    "short_name": "Croatia",
+                    "full_name": "Croatia",
+                    "sort_order": 14,
+                    "present": false
+                },
+                {
+                    "code": "CYP",
+                    "iso2": "CY",
+                    "iso3": "CYP",
+                    "who_code": "CYP",
+                    "short_name": "Cyprus",
+                    "full_name": "Cyprus",
+                    "sort_order": 15,
+                    "present": false
+                },
+                {
+                    "code": "CZE",
+                    "iso2": "CZ",
+                    "iso3": "CZE",
+                    "who_code": "CZH",
+                    "short_name": "Czechia",
+                    "full_name": "Czech Republic",
+                    "sort_order": 16,
+                    "present": false
+                },
+                {
+                    "code": "DNK",
+                    "iso2": "DK",
+                    "iso3": "DNK",
+                    "who_code": "DEN",
+                    "short_name": "Denmark",
+                    "full_name": "Denmark",
+                    "sort_order": 17,
+                    "present": false
+                },
+                {
+                    "code": "EST",
+                    "iso2": "EE",
+                    "iso3": "EST",
+                    "who_code": "EST",
+                    "short_name": "Estonia",
+                    "full_name": "Estonia",
+                    "sort_order": 18,
+                    "present": false
+                },
+                {
+                    "code": "FIN",
+                    "iso2": "FI",
+                    "iso3": "FIN",
+                    "who_code": "FIN",
+                    "short_name": "Finland",
+                    "full_name": "Finland",
+                    "sort_order": 19,
+                    "present": false
+                },
+                {
+                    "code": "FRA",
+                    "iso2": "FR",
+                    "iso3": "FRA",
+                    "who_code": "FRA",
+                    "short_name": "France",
+                    "full_name": "France",
+                    "sort_order": 20,
+                    "present": false
+                },
+                {
+                    "code": "GEO",
+                    "iso2": "GE",
+                    "iso3": "GEO",
+                    "who_code": "GEO",
+                    "short_name": "Georgia",
+                    "full_name": "Georgia",
+                    "sort_order": 21,
+                    "present": false
+                },
+                {
+                    "code": "DEU",
+                    "iso2": "DE",
+                    "iso3": "DEU",
+                    "who_code": "DEU",
+                    "short_name": "Germany",
+                    "full_name": "Germany",
+                    "sort_order": 22,
+                    "present": false
+                },
+                {
+                    "code": "GRC",
+                    "iso2": "GR",
+                    "iso3": "GRC",
+                    "who_code": "GRE",
+                    "short_name": "Greece",
+                    "full_name": "Greece",
+                    "sort_order": 23,
+                    "present": false
+                },
+                {
+                    "code": "HUN",
+                    "iso2": "HU",
+                    "iso3": "HUN",
+                    "who_code": "HUN",
+                    "short_name": "Hungary",
+                    "full_name": "Hungary",
+                    "sort_order": 25,
+                    "present": false
+                },
+                {
+                    "code": "ISL",
+                    "iso2": "IS",
+                    "iso3": "ISL",
+                    "who_code": "ICE",
+                    "short_name": "Iceland",
+                    "full_name": "Iceland",
+                    "sort_order": 26,
+                    "present": false
+                },
+                {
+                    "code": "IRL",
+                    "iso2": "IE",
+                    "iso3": "IRL",
+                    "who_code": "IRE",
+                    "short_name": "Ireland",
+                    "full_name": "Ireland",
+                    "sort_order": 27,
+                    "present": false
+                },
+                {
+                    "code": "ISR",
+                    "iso2": "IL",
+                    "iso3": "ISR",
+                    "who_code": "ISR",
+                    "short_name": "Israel",
+                    "full_name": "Israel",
+                    "sort_order": 28,
+                    "present": false
+                },
+                {
+                    "code": "ITA",
+                    "iso2": "IT",
+                    "iso3": "ITA",
+                    "who_code": "ITA",
+                    "short_name": "Italy",
+                    "full_name": "Italy",
+                    "sort_order": 29,
+                    "present": false
+                },
+                {
+                    "code": "KAZ",
+                    "iso2": "KZ",
+                    "iso3": "KAZ",
+                    "who_code": "KAZ",
+                    "short_name": "Kazakhstan",
+                    "full_name": "Kazakhstan",
+                    "sort_order": 30,
+                    "present": false
+                },
+                {
+                    "code": "KGZ",
+                    "iso2": "KG",
+                    "iso3": "KGZ",
+                    "who_code": "KGZ",
+                    "short_name": "Kyrgyzstan",
+                    "full_name": "Kyrgyzstan",
+                    "sort_order": 31,
+                    "present": false
+                },
+                {
+                    "code": "LVA",
+                    "iso2": "LV",
+                    "iso3": "LVA",
+                    "who_code": "LVA",
+                    "short_name": "Latvia",
+                    "full_name": "Latvia",
+                    "sort_order": 32,
+                    "present": false
+                },
+                {
+                    "code": "LTU",
+                    "iso2": "LT",
+                    "iso3": "LTU",
+                    "who_code": "LTU",
+                    "short_name": "Lithuania",
+                    "full_name": "Lithuania",
+                    "sort_order": 33,
+                    "present": false
+                },
+                {
+                    "code": "LUX",
+                    "iso2": "LU",
+                    "iso3": "LUX",
+                    "who_code": "LUX",
+                    "short_name": "Luxembourg",
+                    "full_name": "Luxembourg",
+                    "sort_order": 34,
+                    "present": false
+                },
+                {
+                    "code": "MLT",
+                    "iso2": "MT",
+                    "iso3": "MLT",
+                    "who_code": "MAT",
+                    "short_name": "Malta",
+                    "full_name": "Malta",
+                    "sort_order": 35,
+                    "present": false
+                },
+                {
+                    "code": "MCO",
+                    "iso2": "MC",
+                    "iso3": "MCO",
+                    "who_code": "MON",
+                    "short_name": "Monaco",
+                    "full_name": "Monaco",
+                    "sort_order": 36,
+                    "present": false
+                },
+                {
+                    "code": "MNE",
+                    "iso2": "ME",
+                    "iso3": "MNE",
+                    "who_code": "MNE",
+                    "short_name": "Montenegro",
+                    "full_name": "Montenegro",
+                    "sort_order": 37,
+                    "present": false
+                },
+                {
+                    "code": "NLD",
+                    "iso2": "NL",
+                    "iso3": "NLD",
+                    "who_code": "NET",
+                    "short_name": "Netherlands",
+                    "full_name": "Netherlands",
+                    "sort_order": 38,
+                    "present": false
+                },
+                {
+                    "code": "MKD",
+                    "iso2": "MK",
+                    "iso3": "MKD",
+                    "who_code": "MKD",
+                    "short_name": "North Macedonia",
+                    "full_name": "North Macedonia",
+                    "sort_order": 39,
+                    "present": false
+                },
+                {
+                    "code": "NOR",
+                    "iso2": "NO",
+                    "iso3": "NOR",
+                    "who_code": "NOR",
+                    "short_name": "Norway",
+                    "full_name": "Norway",
+                    "sort_order": 40,
+                    "present": false
+                },
+                {
+                    "code": "POL",
+                    "iso2": "PL",
+                    "iso3": "POL",
+                    "who_code": "POL",
+                    "short_name": "Poland",
+                    "full_name": "Poland",
+                    "sort_order": 41,
+                    "present": false
+                },
+                {
+                    "code": "PRT",
+                    "iso2": "PT",
+                    "iso3": "PRT",
+                    "who_code": "POR",
+                    "short_name": "Portugal",
+                    "full_name": "Portugal",
+                    "sort_order": 42,
+                    "present": false
+                },
+                {
+                    "code": "MDA",
+                    "iso2": "MD",
+                    "iso3": "MDA",
+                    "who_code": "MDA",
+                    "short_name": "Republic of Moldova",
+                    "full_name": "Republic of Moldova",
+                    "sort_order": 43,
+                    "present": false
+                },
+                {
+                    "code": "ROU",
+                    "iso2": "RO",
+                    "iso3": "ROU",
+                    "who_code": "ROM",
+                    "short_name": "Romania",
+                    "full_name": "Romania",
+                    "sort_order": 44,
+                    "present": false
+                },
+                {
+                    "code": "RUS",
+                    "iso2": "RU",
+                    "iso3": "RUS",
+                    "who_code": "RUS",
+                    "short_name": "Russian Federation",
+                    "full_name": "Russian Federation",
+                    "sort_order": 45,
+                    "present": false
+                },
+                {
+                    "code": "SMR",
+                    "iso2": "SM",
+                    "iso3": "SMR",
+                    "who_code": "SMR",
+                    "short_name": "San Marino",
+                    "full_name": "San Marino",
+                    "sort_order": 46,
+                    "present": false
+                },
+                {
+                    "code": "SRB",
+                    "iso2": "RS",
+                    "iso3": "SRB",
+                    "who_code": "SRB",
+                    "short_name": "Serbia",
+                    "full_name": "Serbia",
+                    "sort_order": 47,
+                    "present": false
+                },
+                {
+                    "code": "SVK",
+                    "iso2": "SK",
+                    "iso3": "SVK",
+                    "who_code": "SVK",
+                    "short_name": "Slovakia",
+                    "full_name": "Slovakia",
+                    "sort_order": 50,
+                    "present": false
+                },
+                {
+                    "code": "SVN",
+                    "iso2": "SI",
+                    "iso3": "SVN",
+                    "who_code": "SVN",
+                    "short_name": "Slovenia",
+                    "full_name": "Slovenia",
+                    "sort_order": 51,
+                    "present": false
+                },
+                {
+                    "code": "ESP",
+                    "iso2": "ES",
+                    "iso3": "ESP",
+                    "who_code": "SPA",
+                    "short_name": "Spain",
+                    "full_name": "Spain",
+                    "sort_order": 52,
+                    "present": true
+                },
+                {
+                    "code": "SWE",
+                    "iso2": "SE",
+                    "iso3": "SWE",
+                    "who_code": "SWE",
+                    "short_name": "Sweden",
+                    "full_name": "Sweden",
+                    "sort_order": 53,
+                    "present": false
+                },
+                {
+                    "code": "CHE",
+                    "iso2": "CH",
+                    "iso3": "CHE",
+                    "who_code": "SWI",
+                    "short_name": "Switzerland",
+                    "full_name": "Switzerland",
+                    "sort_order": 54,
+                    "present": false
+                },
+                {
+                    "code": "TJK",
+                    "iso2": "TJ",
+                    "iso3": "TJK",
+                    "who_code": "TJK",
+                    "short_name": "Tajikistan",
+                    "full_name": "Tajikistan",
+                    "sort_order": 55,
+                    "present": false
+                },
+                {
+                    "code": "TUR",
+                    "iso2": "TR",
+                    "iso3": "TUR",
+                    "who_code": "TUR",
+                    "short_name": "Türkiye",
+                    "full_name": "Türkiye",
+                    "sort_order": 56,
+                    "present": false
+                },
+                {
+                    "code": "TKM",
+                    "iso2": "TM",
+                    "iso3": "TKM",
+                    "who_code": "TKM",
+                    "short_name": "Turkmenistan",
+                    "full_name": "Turkmenistan",
+                    "sort_order": 57,
+                    "present": false
+                },
+                {
+                    "code": "UKR",
+                    "iso2": "UA",
+                    "iso3": "UKR",
+                    "who_code": "UKR",
+                    "short_name": "Ukraine",
+                    "full_name": "Ukraine",
+                    "sort_order": 58,
+                    "present": false
+                },
+                {
+                    "code": "GBR",
+                    "iso2": "GB",
+                    "iso3": "GBR",
+                    "who_code": "UNK",
+                    "short_name": "United Kingdom",
+                    "full_name": "United Kingdom",
+                    "sort_order": 59,
+                    "present": false
+                },
+                {
+                    "code": "UZB",
+                    "iso2": "UZ",
+                    "iso3": "UZB",
+                    "who_code": "UZB",
+                    "short_name": "Uzbekistan",
+                    "full_name": "Republic of Uzbekistan",
+                    "sort_order": 65,
+                    "present": false
+                }
+            ],
+            "is_obsolete": false
+        },
+        {
+            "data_type": "country_group_ref",
+            "code": "COUNTRY_GRP",
+            "label": "Supranational group of countries",
+            "values": [
+                {
+                    "code": "WHO_EURO",
+                    "short_name": "WHO European Region",
+                    "full_name": "WHO European Region",
+                    "sort_order": 1,
+                    "present": false,
+                    "type": "european"
+                },
+                {
+                    "code": "EU_MEMBERS",
+                    "short_name": "Members of the European Union",
+                    "full_name": "Members of the European Union",
+                    "sort_order": 2,
+                    "present": false,
+                    "type": "european"
+                },
+                {
+                    "code": "EU_BEFORE_MAY2004",
+                    "short_name": "Members of the EU before May 2004 (EU15)",
+                    "full_name": "Members of the European Union before May 2004 (EU15)",
+                    "sort_order": 3,
+                    "present": false,
+                    "type": "european"
+                },
+                {
+                    "code": "EU_AFTER_MAY2004",
+                    "short_name": "Members of the EU after May 2004 (EU13)",
+                    "full_name": "Members of the European Union after May 2004 (EU13)",
+                    "sort_order": 4,
+                    "present": false,
+                    "type": "european"
+                },
+                {
+                    "code": "CIS",
+                    "short_name": "Commonwealth of Independent States",
+                    "full_name": "Commonwealth of Independent States",
+                    "sort_order": 5,
+                    "present": false,
+                    "type": "european"
+                },
+                {
+                    "code": "CARINFONET",
+                    "short_name": "Central Asian Republics Information Network members (CARINFONET)",
+                    "full_name": "Central Asian Republics Information Network members (CARINFONET)",
+                    "sort_order": 6,
+                    "present": false,
+                    "type": "european"
+                },
+                {
+                    "code": "SEEHN",
+                    "short_name": "South-eastern Europe Health Network members (SEEHN)",
+                    "full_name": "South-eastern Europe Health Network members (SEEHN)",
+                    "sort_order": 7,
+                    "present": false,
+                    "type": "european"
+                },
+                {
+                    "code": "NORDIC",
+                    "short_name": "Nordic countries",
+                    "full_name": "Nordic countries",
+                    "sort_order": 8,
+                    "present": false,
+                    "type": "european"
+                },
+                {
+                    "code": "SMALL",
+                    "short_name": "Small countries",
+                    "full_name": "Small countries",
+                    "sort_order": 9,
+                    "present": false,
+                    "type": "european"
+                }
+            ],
+            "is_obsolete": false
+        },
+        {
+            "data_type": "categorical_response_ref",
+            "code": "SEX",
+            "label": "Sex",
+            "values": [
+                {
+                    "code": "FEMALE",
+                    "label": "Female",
+                    "sort_order": 19,
+                    "present": false
+                },
+                {
+                    "code": "MALE",
+                    "label": "Male",
+                    "sort_order": 20,
+                    "present": false
+                },
+                {
+                    "code": "ALL",
+                    "label": "All",
+                    "sort_order": 21,
+                    "present": true
+                }
+            ],
+            "is_obsolete": false
+        },
+        {
+            "data_type": "integer",
+            "code": "YEAR",
+            "label": "Year of measure",
+            "lower_bound": 1995,
+            "is_obsolete": false,
+            "upper_bound": 2019
+        }
+    ],
+    "data_sets": [
+        {
+            "code": "HFA",
+            "short_name": "European Health for All database",
+            "full_name": "European Health for All database (WHO)",
+            "contact": "",
+            "updated_on": "2022-09-04T13:39:48.727",
+            "data_updated_on": "2022-09-04T13:39:48.727",
+            "metadata_updated_on": "2020-09-08T11:14:06.15",
+            "notes_updated_on": "2020-09-08T11:10:18.387",
+            "url": "https://dw.euro.who.int/api/v3/data_sets/HFA",
+            "export_url": "https://dw.euro.who.int/api/v3/export_data_set/HFA"
+        },
+        {
+            "code": "JMF",
+            "short_name": "Joint Monitoring Framework (JMF)",
+            "full_name": "Joint Monitoring Framework (JMF)",
+            "contact": "euhiu@who.int",
+            "updated_on": "2022-09-01T08:50:49.873",
+            "data_updated_on": "2022-09-01T08:50:49.873",
+            "metadata_updated_on": "2020-05-14T09:47:25.327",
+            "notes_updated_on": "2019-08-26T06:47:45.407",
+            "url": "https://dw.euro.who.int/api/v3/data_sets/JMF",
+            "export_url": "https://dw.euro.who.int/api/v3/export_data_set/JMF"
+        }
+    ],
+    "data": [
+        {
+            "fact_id": "42596236",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "1995"
+            },
+            "value": {
+                "display": "34.0",
+                "numeric": 34.0
+            }
+        },
+        {
+            "fact_id": "42596237",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "1996"
+            },
+            "value": {
+                "display": "34.0",
+                "numeric": 34.0
+            }
+        },
+        {
+            "fact_id": "42596238",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "1997"
+            },
+            "value": {
+                "display": "35.0",
+                "numeric": 35.0
+            }
+        },
+        {
+            "fact_id": "42596239",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "1998"
+            },
+            "value": {
+                "display": "34.0",
+                "numeric": 34.0
+            }
+        },
+        {
+            "fact_id": "42596240",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "1999"
+            },
+            "value": {
+                "display": "33.0",
+                "numeric": 33.0
+            }
+        },
+        {
+            "fact_id": "42596241",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2000"
+            },
+            "value": {
+                "display": "34.3",
+                "numeric": 34.3
+            }
+        },
+        {
+            "fact_id": "42596242",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2001"
+            },
+            "value": {
+                "display": "33.0",
+                "numeric": 33.0
+            }
+        },
+        {
+            "fact_id": "42596243",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2002"
+            },
+            "value": {
+                "display": "31.0",
+                "numeric": 31.0
+            }
+        },
+        {
+            "fact_id": "42596244",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2003"
+            },
+            "value": {
+                "display": "31.8",
+                "numeric": 31.8
+            }
+        },
+        {
+            "fact_id": "42596245",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2004"
+            },
+            "value": {
+                "display": "33.3",
+                "numeric": 33.3
+            }
+        },
+        {
+            "fact_id": "42596246",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2005"
+            },
+            "value": {
+                "display": "32.4",
+                "numeric": 32.4
+            }
+        },
+        {
+            "fact_id": "42596247",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2006"
+            },
+            "value": {
+                "display": "33.5",
+                "numeric": 33.5
+            }
+        },
+        {
+            "fact_id": "42596248",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2007"
+            },
+            "value": {
+                "display": "34.1",
+                "numeric": 34.1
+            }
+        },
+        {
+            "fact_id": "42596249",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2008"
+            },
+            "value": {
+                "display": "34.2",
+                "numeric": 34.2
+            }
+        },
+        {
+            "fact_id": "42596250",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2009"
+            },
+            "value": {
+                "display": "34.9",
+                "numeric": 34.9
+            }
+        },
+        {
+            "fact_id": "42596251",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2010"
+            },
+            "value": {
+                "display": "35.2",
+                "numeric": 35.2
+            }
+        },
+        {
+            "fact_id": "42596252",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2011"
+            },
+            "value": {
+                "display": "35.7",
+                "numeric": 35.7
+            }
+        },
+        {
+            "fact_id": "42596253",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2012"
+            },
+            "value": {
+                "display": "35.4",
+                "numeric": 35.4
+            }
+        },
+        {
+            "fact_id": "42596254",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2013"
+            },
+            "value": {
+                "display": "36.2",
+                "numeric": 36.2
+            }
+        },
+        {
+            "fact_id": "42596255",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2014"
+            },
+            "value": {
+                "display": "36.1",
+                "numeric": 36.1
+            }
+        },
+        {
+            "fact_id": "42596256",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2015"
+            },
+            "value": {
+                "display": "36.2",
+                "numeric": 36.2
+            }
+        },
+        {
+            "fact_id": "42596257",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2016"
+            },
+            "value": {
+                "display": "35.8",
+                "numeric": 35.8
+            }
+        },
+        {
+            "fact_id": "42596258",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2017"
+            },
+            "value": {
+                "display": "34.7",
+                "numeric": 34.7
+            }
+        },
+        {
+            "fact_id": "42596259",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2018"
+            },
+            "value": {
+                "display": "34.7",
+                "numeric": 34.7
+            }
+        },
+        {
+            "fact_id": "42596260",
+            "attributes": {
+                "MEASURE_TYPE": "INDEX"
+            },
+            "dimensions": {
+                "COUNTRY": "ESP",
+                "COUNTRY_GRP": "",
+                "SEX": "ALL",
+                "YEAR": "2019"
+            },
+            "value": {
+                "display": "33.0",
+                "numeric": 33.0
+            }
+        }
+    ]
+}
