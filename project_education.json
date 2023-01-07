@@ -1,78 +1,78 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 250,
-    "height": 300,
-    "view": {"stroke": "transparent"},
-    "title": {
-      "text": "Education Inequality Across Spain",
-      "fontSize": 12,
-      "subtitle": [
-        "Figues are percentages of total population.",
-        "Source: Instituto Nacional de Estadistica, 2021"
-      ],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "middle"
-    },
-    "data": {
-      "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/project/spain_geojson.json",
-      "format": {"property": "features"}
-    },
-    "projection": {"type": "mercator"},
-    "mark": "geoshape",
-    "params": [
-      {
-        "name": "Select",
-        "value": "Illiterate",
-        "bind": {
-          "input": "select",
-          "options": [
-            "Illiterate",
-            "Incomplete primary studies",
-            "Primary education",
-            "First stage of secondary education and similar",
-            "Second stage of secondary education",
-            "Vocationally oriented second stage of secondary educ",
-            "Higher education"
-          ]
-        }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 250,
+  "height": 300,
+  "view": {"stroke": "transparent"},
+  "title": {
+    "text": "Education Inequality Across Spain",
+    "fontSize": 12,
+    "subtitle": [
+      "Figues are percentages of total population.",
+      "Source: Instituto Nacional de Estadistica, 2021"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/spain_topojson",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "mercator"},
+  "mark": "geoshape",
+  "params": [
+    {
+      "name": "Select",
+      "value": "Illiterate",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Illiterate",
+          "Incomplete primary studies",
+          "Primary education",
+          "First stage of secondary education and similar",
+          "Second stage of secondary education",
+          "Vocationally oriented second stage of secondary educ",
+          "Higher education"
+        ]
       }
-    ],
-    "transform": [
-      {
-        "lookup": "properties.name",
-        "from": {
-          "data": {
-            "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/all_education.csv"
-          },
-          "key": "Region",
-          "fields": [
-            "Illiterate",
-            "Incomplete primary studies",
-            "Primary education",
-            "First stage of secondary education and similar",
-            "Second stage of secondary education",
-            "Vocationally oriented second stage of secondary educ",
-            "Higher education"
-          ]
-        }
-      },
-      {"calculate": "datum[Select]", "as": "varSelected"}
-    ],
-    "encoding": {
-      "color": {
-        "field": "varSelected",
-        "legend": {"title": "Percentage", "orient": "right", "direction": "vertical"},
-        "type": "quantitative",
-        "scale": {"scheme": "lightgreyred"}
-      },
-      "tooltip": [
-        {"field": "properties.name", "title": "Autonomous community"},
-        {
-          "field": "varSelected",
-          "title": "Level of specified education",
-          "format": ".1f"
-        }
-      ]
     }
+  ],
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/all_education.csv"
+        },
+        "key": "Region",
+        "fields": [
+          "Illiterate",
+          "Incomplete primary studies",
+          "Primary education",
+          "First stage of secondary education and similar",
+          "Second stage of secondary education",
+          "Vocationally oriented second stage of secondary educ",
+          "Higher education"
+        ]
+      }
+    },
+    {"calculate": "datum[Select]", "as": "varSelected"}
+  ],
+  "encoding": {
+    "color": {
+      "field": "varSelected",
+      "legend": {"title": "Percentage", "orient": "right", "direction": "vertical"},
+      "type": "quantitative",
+      "scale": {"scheme": "lightgreyred"}
+    },
+    "tooltip": [
+      {"field": "properties.name", "title": "Autonomous community"},
+      {
+        "field": "varSelected",
+        "title": "Level of specified education",
+        "format": ".1f"
+      }
+    ]
   }
+}

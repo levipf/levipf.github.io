@@ -15,7 +15,7 @@
     "anchor": "middle"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/project/spain_geojson.json",
+    "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/spain_topojson",
     "format": {"property": "features"}
   },
   "projection": {"type": "mercator"},

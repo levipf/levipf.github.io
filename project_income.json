@@ -36,7 +36,7 @@
       "lookup": "Autonomous community",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/project/spain_geojson.json",
+          "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/spain_topojson",
           "format": {"property": "features"}
         },
         "key": "properties.name",

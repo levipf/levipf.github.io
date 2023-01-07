@@ -12,7 +12,7 @@
     "height": 400,
     "description": "A bar chart that sorts the y-values by the x-values.",
     "data": {
-      "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/project/scraped_data%20(1).csv"
+      "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/scraped_data%20(1).csv"
     },
     "transform": [
       {"filter": "datum['value'] != null"},
