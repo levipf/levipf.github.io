@@ -190,8 +190,11 @@ h3{text-decoration: underline;}
 
   /* main icon bar */
 .icon-bar {
+    margin: auto;
+    margin-top: 0px;
+    align-content: center;
+    max-width: 940px;
     height: 50px;
-    width: 100%;
     background-color: #F47C7C;
     overflow: auto;
 }
