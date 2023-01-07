@@ -1,0 +1,266 @@
+/* Richard Davies, Data Science for Economists */
+
+/* This is my second CSS file */
+
+
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+
+/* Set the background color for my page: */
+
+/* Book on colour = Joseph Albers - Interaction of Colour */
+
+/* ingernational klein blue */
+
+body{
+    background-color:#c7f3ff ; 
+    /*  #3a4660 #2d545e */
+ }
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1, p{
+    color:rgb(0, 0, 0);
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+    /* text-decoration: underline; */
+}
+h3{
+    color:rgb(0, 0, 0);
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+    
+.myWeek0{
+    
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;  
+    max-width: 1000px;
+    background-color: rgb(230, 230, 230);
+    border-width: 1px;
+    border-style: outset;
+    border-radius: 0px;
+    border-color: rgba(0, 7, 3, 0.829); 
+    text-align: center;
+    
+    
+    /* #c9af98 #ed8a63 #845007 #e1b382 */
+}
+
+
+.myWeek1{
+    
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;  
+    max-width: 1000px;
+    background-color: rgb(230, 230, 230);
+    border-width: 1px;
+    border-style: outset;
+    border-radius: 0px;
+    border-color: rgba(0, 7, 3, 0.829); 
+    text-align: center;
+    
+    
+    /* #c9af98 #ed8a63 #845007 #e1b382 */
+}
+.myWeek2{
+    
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    width: 60%;  
+    max-width: 1000px;
+    background-color: rgb(230, 230, 230);
+    border-width: 1px;
+    border-style: outset;
+    border-radius: 0px;
+    border-color: rgba(0, 7, 3, 0.829); 
+    text-align: center;
+    
+    
+    /* #c9af98 #ed8a63 #845007 #e1b382 */
+}
+
+.myWeek3{
+    
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    width: 60%;  
+    max-width: 1000px;
+    background-color: rgb(230, 230, 230);
+    border-width: 1px;
+    border-style: outset;
+    border-radius: 0px;
+    border-color: rgba(0, 7, 3, 0.829); 
+    text-align: center;
+    
+    
+    /* #c9af98 #ed8a63 #845007 #e1b382 */
+}
+
+.myWeek4{
+    
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    width: 60%;  
+    max-width: 1000px;
+    background-color: rgb(230, 230, 230);
+    border-width: 1px;
+    border-style: outset;
+    border-radius: 0px;
+    border-color: rgba(0, 7, 3, 0.829); 
+    text-align: center;
+    
+    
+    /* #c9af98 #ed8a63 #845007 #e1b382 */
+}
+
+.myWeek5{
+    
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    width: 60%;  
+    max-width: 1000px;
+    background-color: rgb(230, 230, 230);
+    border-width: 1px;
+    border-style: outset;
+    border-radius: 0px;
+    border-color: rgba(0, 7, 3, 0.829); 
+    text-align: center;
+    
+    
+    /* #c9af98 #ed8a63 #845007 #e1b382 */
+}
+
+.wrap{
+    
+
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;  
+    max-width: 1000px;
+    background-color: white;
+    border-width: 1px;
+    border-style: outset;
+    border-radius: 0px;
+    border-color: rgba(0, 7, 3, 0.829); 
+    text-align: center;
+}
+
+ 
+a{
+    background-color: #c7f3ff50;
+
+    padding:8px;
+    
+    border:1px;
+    border-color:grey;
+    border-style: solid;
+    border-radius: 10px;
+
+    font-family: 'Merriweather', monospace;
+    font-weight:700;
+    color:black;
+    
+    text-decoration: none; 
+    
+}
+a:hover{
+
+        background-color: rgba(207, 207, 207, 0.8);
+    
+        border:1px;
+        border-color:rgb(15, 66, 234);
+        border-style: solid;   
+} 
+
+
+    /* #c9af98 #ed8a63 #845007 #e1b382 */
+/* Set the apperance of the class, chart */
+.chart{
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 100%;
+    max-width: 1200px; 
+    background-color: white; 
+    width:450px;
+/*     border-width: 0.3px;
+    border-style: outset; 
+    border-radius: 0px;
+    border-color: grey;  */
+    
+}
+
+/* border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100,100,100); */
+   
+    #Chart8{
+        margin-bottom: 10px;
+        width: 10px;
+        margin-left: -120px;
+      }
+    #Chart9{
+        margin-bottom: 10px;
+        width: 10px;
+        margin-left: -120px;
+    }
+    #Chart10{
+        margin-bottom: 10px;
+        width: 10px;
+        margin-left: -120px;
+      }
+      #Chart11{
+        margin-bottom: 10px;
+        width: 10px;
+        margin-left: -120px;
+      }
+      #Chart12{
+        margin-bottom: 10px;
+        width: 10px;
+        margin-left: -120px;
+      }
+      #Chart13{
+        margin-bottom: 10px;
+        width: 10px;
+        margin-left: -120px;
+      }
+      #Chart14{
+        margin-bottom: 10px;
+        width: 10px;
+        margin-left: -120px;
+      }
+      #Chart15{
+        margin-bottom: 10px;
+        width: 10px;
+        margin-left: -120px;
+      }
+      #Chart16{
+        margin-bottom: 10px;
+        width: 10px;
+        margin-left: -120px;
+      }
+     .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 150%;
+      }

@@ -1,0 +1,62 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Regressing Illiteracy Rates Against Risk-of-Poverty Rates in Spain",
+      "subtitle": "2021 Autonomous Community data used, R² =  0.72. Sources: INE, datos.gob.es",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/poverty.csv"
+    },
+    "width": 500,
+    "height": 300,
+    "layer": [
+      {
+        "mark": {"type": "point", "filled": true},
+        "encoding": {
+          "x": {
+            "field": "Illiterate",
+            "type": "quantitative",
+            "scale": {"domain": [0, 3]},
+            "axis": {"title": "Illiterate", "grid": false}
+          },
+          "y": {
+            "field": "Risk-of-poverty",
+            "type": "quantitative",
+            "scale": {"domain": [9, 35]},
+            "axis": {"title": "Risk-of-poverty", "grid": false}
+          },
+          "tooltip": [
+              {"field": "Region", "title": "Autonomous Community"},
+              {"field": "Illiterate", "title": "Population (%) Illiterate"},
+              {"field": "Risk-of-poverty", "title": "Population (%) at Risk-of-poverty"}
+            ]
+        }
+      },
+      {
+        "mark": {"type": "line", "color": "firebrick"},
+        "transform": [{"regression": "Risk-of-poverty", "on": "Illiterate"}],
+        "encoding": {
+          "x": {"field": "Illiterate", "type": "quantitative"},
+          "y": {"field": "Risk-of-poverty", "type":"quantitative"}
+        }
+      },
+      {
+        "transform": [
+          {"regression": "Risk-of-poverty", "on": "Illiterate", "params": true},
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "firebrick",
+          "x": "width",
+          "align": "right",
+          "y": -5
+        },
+        "encoding": {"text": {"type": "nominal", "field": "R2"}}
+      }
+    ]
+  }

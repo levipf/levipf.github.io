@@ -1,8 +1,8 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-      "text": "Total IMF Credit Outstanding (1984-2022)",
-      "subtitle":"Loans disbursed in SDRs (bn). Source: IMF",
+      "text": "IMF Lending Outstanding",
+      "subtitle":"Loans disbursed in SDRs (bn), 1984-2022. Source: IMF",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",

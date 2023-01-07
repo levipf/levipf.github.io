@@ -1,0 +1,24 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+     "title": {
+        "text": "CO2 Emmissions (m's) in South America",
+        "subtitle": "2010-2021. Source: Our World In Data",
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "anchor": "start",
+        "color": "black"
+      },
+      "data": {"url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/south_america_emmissions.csv"},
+    "width": 150,
+    "height": 300,
+    "mark": "rect",
+    "encoding": {
+      "y": {"field": "Entity", "type": "nominal", "title": ""},
+      "x": {"field": "Year", "type": "ordinal"},
+      "color": {"aggregate": "mean", "field": "Annual CO2 emissions (millions)", "title":"CO2 Emmissions"}
+    },
+    "config": {
+      "axis": {"grid": true, "tickBand": "extent"}
+    }
+  }
+  

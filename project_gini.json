@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Income Inequality in the EU",
+    "subtitle": "Gini Coefficient, 2019 data. EU average = 30.94. Source: World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 500,
+  "height": 400,
+  "description": "A bar chart that sorts the y-values by the x-values.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/gini.csv"
+  },
+  "transform": [
+    {"filter": "datum['GINI'] != null"},
+    {"joinaggregate": [{"op": "mean", "field": "GINI", "as": "AverageGINI"}]}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "bar", "color": "#c9d51e45"},
+      "encoding": {
+        "x": {"field": "GINI", "type": "quantitative", "title": "GINI"},
+        "tooltip": [
+          {"field": "Country", "title": "Country"},
+          {"field": "GINI", "title": "Gini Coefficient"},
+          {"field": "AverageGINI", "title": "Average Gini"}
+        ],
+        "color": {
+          "condition": [
+            {"value": "red", "test": {"field": "Country", "oneOf": ["Spain"]}}
+          ]
+        },
+        "y": {"field": "Country", "title": "", "type": "ordinal", "sort": "-x"}
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "#098d73"},
+      "encoding": {
+        "x": {
+          "aggregate": "average",
+          "field": "AverageGINI",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

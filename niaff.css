@@ -1,0 +1,253 @@
+/* CSS files can can also be used to access e.g. fonts */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+/* Format my paragraph */
+
+/* My name */
+
+h1 {
+	color: #569ac2;
+	font-size: 80px;
+	margin-top: 30px;
+	margin-bottom: 0px;	
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif ;
+}
+/* First line */
+
+
+h2 {
+	color: #ffffff;
+	font-size: 30px;
+    font-weight: 500;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+	text-align: center;
+	font-family: 'Poppins', sans-serif ;
+}
+
+h3{
+    color:#569ac2;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 20px;
+    line-height: 0; 
+    text-align: center;
+ }
+
+
+ h4{
+    color:#ffffff;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 25px;
+    text-align: center;
+ }
+
+ h5{
+  color:#ffffff;
+  font-family: 'Poppins', sans-serif ;
+  font-size: 20px;
+  line-height: 0; 
+  text-align: center;
+}
+
+
+
+body{
+    background-color: #abccdf;
+    max-width: 90%;
+    margin: auto;
+ }
+ 
+ 
+ ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #569ac2;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #569ac2;
+  }
+ 
+ 
+ footer {
+    height: 100px
+ }
+ 
+ 
+ .pagecontainer {
+   display: grid;
+ 
+ }
+
+ .acontainer {
+    
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    position: relative;
+    left: 0px;
+    width: 100%;
+    text-align: justify;
+    border: 3px solid #569ac2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 30px;
+    right: 0px;
+    margin-top: 10px;
+
+}
+ 
+ /* --------------------------------------CONTENT IN BODY----------------------------------------------*/
+ 
+ /* Flexbox container with home page graphs */
+ .bcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;;
+    gap: 30px 30px;
+    margin-top: 30px;
+    border-style: solid;
+    border-color:#569ac2;
+    padding: 30px;
+    border-radius: 25px;
+  }
+  
+ 
+ /* Chart Format */
+ .chart-container {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-radius: 5px;
+    padding: 20px;
+    display: inline-block;
+ }
+
+ .navbuttons {
+	display:flex;
+	justify-content:center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+  width: 100%;
+ }
+ 
+ /* Buttons inspired by Freddie Lowe */
+
+ /* Button style */
+container {
+	align-content: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 3px;
+	border-color: #ffffff;
+	padding: 60px;
+	clear:both;
+
+}
+
+.button{
+	align-content: center;
+	flex-flow: center;
+	border-radius: 4px;
+	background-color: #569ac2;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 240px;
+	cursor: pointer;
+	margin: 5px;
+	transition: color 1s;
+	font-family: 'Poppins', sans-serif ;
+  }
+
+  .button1{
+    align-content: center;
+    flex-flow: center;
+    border-radius: 4px;
+    background-color: #569ac2;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 20%;
+    cursor: pointer;
+    margin: 5px;
+    transition: color 1s;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    .button2{
+      align-content: center;
+      flex-flow: center;
+      border-radius: 4px;
+      background-color: #569ac2;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 25%;
+      cursor: pointer;
+      margin: 5px;
+      transition: color 1s;
+      font-family: 'Poppins', sans-serif;
+      }
+
+
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+
+  }
+  
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+
+  }
+
+  
+.button:hover span {
+	padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+
+  .text-level-A, .text{
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif ;
+    margin-bottom: 10px;
+    clear: left;
+    width: 100%;
+  }

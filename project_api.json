@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/project_apiESP.json",
+    "format": {"type": "json", "property": "data"}
+  },
+  "title": {
+    "text": "Income Inequality in Spain",
+    "subtitle": [
+      "Gini Coefficient, 1995-2019. Source: World Health Organization"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 500,
+  "height": 300,
+  "mark": {
+    "type": "line",
+    "point": {"filled": false, "fill": "white"},
+    "color": "seagreen",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "dimensions.YEAR",
+      "type": "temporal",
+      "axis": {"title": "", "grid": false, "ticks": false, "labelAngle": 45}
+    },
+    "color":{
+      "value": "red"
+    },
+    "tooltip": [
+      {"field": "year_dimensions.YEAR", "title": "Year"},
+      {"field": "value.display", "title": "Gini Coefficient"}
+    ],
+    "y": {
+      "field": "value.display",
+      "type": "quantitative",
+      "scale": {"domain": [30, 38]},
+      "title": null
+    }
+  }
+}

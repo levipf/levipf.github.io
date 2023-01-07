@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/codeforgermany/click_that_hood/main/public/data/spain-communities.geojson",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "mercator"},
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/spain_unemployment.csv"
+        },
+        "key": "Region",
+        "fields": ["Unemployment"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "darkgray", "strokeWidth": 0.5},
+  "encoding": {
+    "color": {"field": "Unemployment", "type": "quantitative"},
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "Region"},
+      {"field": "Unemployment", "title": "Unemployment (%)"}
+    ]
+  }
+}

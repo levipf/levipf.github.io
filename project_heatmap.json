@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Income Inequality in the EU",
+      "subtitle": "Gini coefficent 1995-2019 data, white boxes are missing data. Source: World Health Organization",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/project/CountrysData.csv"
+    },
+    "width": 500,
+    "height": 400,
+    "mark": "rect",
+    "encoding": {
+      "y": {"field": "country", "type": "nominal", "title": "", "sort":"-color"},
+      "x": {"field": "headie1", "type": "ordinal", "title": ""},
+          "tooltip": [
+        {"field": "country", "title": "Country code"},
+        {"field": "headie1", "title":"Year"},
+        {"field": "headie2", "title": "Gini coefficient", "format": ".1f"}
+      ],
+      "color": {
+        "aggregate": "mean",
+        "field": "headie2",
+        "title": "Gini coefficient",
+        "scale": {"scheme": "lightgreyred"}
+  
+      }
+    },
+    "config": {"axis": {"grid": true, "tickBand": "extent"}}
+  }

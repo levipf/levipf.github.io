@@ -1,0 +1,57 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Regression of Higher Education on Income in Spain",
+      "subtitle": "2014-2021. Source: Instituto Nacional de Estadistica",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/my_project_regression_data%20(2).csv"
+    },
+    "width": 500,
+    "height": 300,
+    "layer": [
+      {
+        "mark": {"type": "point", "filled": true},
+        "encoding": {
+          "x": {
+            "field": "0_right",
+            "type": "quantitative",
+            "scale": {"domain": [15, 45]},
+            "axis": {"title": "Education", "grid": false}
+          },
+          "y": {
+            "field": "0",
+            "type": "quantitative",
+            "scale": {"domain": [18000, 43000]},
+            "axis": {"title": "Income", "grid": false}
+          }
+        }
+      },
+      {
+        "mark": {"type": "line", "color": "firebrick"},
+        "transform": [{"regression": "0", "on": "0_right"}],
+        "encoding": {
+          "x": {"field": "0_right", "type": "quantitative"},
+          "y": {"field": "0", "type": "quantitative"}
+        }
+      },
+      {
+        "transform": [
+          {"regression": "0", "on": "0_right", "params": true},
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "firebrick",
+          "x": "width",
+          "align": "right",
+          "y": -5
+        },
+        "encoding": {"text": {"type": "nominal", "field": "R2"}}
+      }
+    ]
+  }

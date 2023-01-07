@@ -1,0 +1,82 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "This graph shows the life expectancy at birth for selected European countries using data from the OECD. Not every country has data available for each year.",
+    "title": {
+      "text": "Household Income (€) of Spanish Autonomous Communities (2008-2021)",
+      "subtitle": [
+        "Source: Instituto Nacional de Estadistica",
+        ""
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "darkblue"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/spain_income.csv"
+    },
+    "height": 300,
+    "width": 500,
+    "mark": {"type": "bar"},
+    "transform": [
+      {"filter": "datum.Year==year"},
+      {
+        "filter": {
+          "field": "Autonomous community",
+          "oneOf": [
+            "Andalucia",
+            "Aragon",
+            "Asturias",
+            "Baleares",
+            "Canarias",
+            "Cantabria",
+            "Castilla-Leon",
+            "Castilla-La Mancha",
+            "Cataluña",
+            "Valencia",
+            "Extremadura",
+            "Galicia",
+            "Madrid",
+            "Murcia",
+            "Navarra",
+            "Pais Vasco",
+            "La Rioja",
+            "Ceuta",
+            "Melilla"
+          ]
+        }
+      }
+    ],
+    "params": [
+      {
+        "name": "year",
+        "value": 2021,
+        "bind": {
+          "input": "range",
+          "min": 2014,
+          "max": 2021,
+          "step": 1,
+          "name": "Select the year:"
+        }
+      }
+    ],
+    "encoding": {
+      "y": {
+        "field": "Household income (€)",
+        "type": "quantitative",
+        "scale": {"domain": [0, 45000]},
+        "title": "",
+        "axis": {"grid": false}
+      },
+      "x": {
+        "field": "Autonomous community",
+        "type": "nominal",
+        "title": "",
+        "axis": {"grid": false, "labelAngle": 20}
+      },
+      "tooltip": [
+        {"field": "Autonomous community", "title": "Autonomous community"},
+        {"field": "Household income (€)", "title": "Household income (€)"}
+      ]
+    }
+  }

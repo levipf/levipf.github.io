@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/countries_cluster%20(1).csv"
+    },
+    "width": 400,
+    "height": 300,
+    "title": {
+      "text": "Countries by HDI and GDP per capita",
+      "fontSize": 15,
+      "subtitle": "The countries are clustered to form 3 groups. Source: Our World In Data",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "color": "black"
+    },
+    "mark": {"type": "point", "filled": true, "size": 100, "opacity": 0.8},
+    "encoding": {
+      "x": {
+        "field": "HDI",
+        "title": "HDI",
+        "type": "quantitative",
+        "scale": {"zero": false},
+        "axis": {"grid": false}
+      },
+      "y": {
+        "field": "GDP per capita",
+        "title": "GDP per capita",
+        "type": "quantitative",
+        "scale": {"zero": false},
+        "axis": {"grid": false}
+      },
+      "tooltip": [
+        {"field": "Country", "type": "nominal"},
+        {"field": "HDI", "type": "quantitative"},
+        {"field": "GDP per capita", "type": "quantitative"}
+      ],
+      "color": {
+        "field": "cluster_countries",
+        "title": "Groups",
+        "type": "nominal",
+        "legend": {
+          "labelExpr": "{'0': 'Less Economically Developed', '1': 'Developing ', '2': 'More Economically Developed'}[datum.label]"
+        }
+      }
+    }
+  }

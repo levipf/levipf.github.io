@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Income Inequality in the EU",
+      "subtitle": "Gini Coefficient, 2019 data. EU average = 29.67. Source: Sciendo",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "width": 500,
+    "height": 400,
+    "description": "A bar chart that sorts the y-values by the x-values.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/project/scraped_data%20(1).csv"
+    },
+    "transform": [
+      {"filter": "datum['value'] != null"},
+      {"joinaggregate": [{"op": "mean", "field": "value", "as": "Averagevalue"}]}
+    ],
+    "layer": [
+      {
+        "mark": {"type": "bar", "color": "#bcbcbc95"},
+        "encoding": {
+          "x": {"field": "value", "type": "quantitative", "title": "Gini Coefficient"},
+          "tooltip": [
+            {"field": "country_code", "title": "Country Code"},
+            {"field": "value", "title": "Gini Coefficient"},
+            {"field": "Averagevalue", "title": "Average Gini"}
+          ],
+          "color": {
+            "condition": [
+              {"value": "red", "test": {"field": "country_code", "oneOf": ["ESP"]}}
+            ]
+          },
+          "y": {"field": "country_code", "title": "", "type": "ordinal", "sort": "-x"}
+        }
+      },
+      {
+        "mark": {"type": "rule", "color": "#098d73"},
+        "encoding": {
+          "x": {
+            "aggregate": "average",
+            "field": "Averagevalue",
+            "type": "quantitative"
+          }
+        }
+      }
+    ]
+  }

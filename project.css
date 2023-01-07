@@ -1,0 +1,216 @@
+/* Richard Davies, Data Science for Economists */
+
+/* This is my second CSS file */
+
+
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+/* Set the background color for my page: */
+
+body{
+    background-color: #FAD4D4;
+ }
+
+
+/* Choose the appearance of the p,ol,ul tagp: */
+p, ol, ul{
+    color:rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+} 
+
+/* Choose the appearance of the h1,h2,h3 tags: */
+
+h1, h2, h3{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+h3{text-decoration: underline;}
+
+/* Page headings for Portfolio and Project */
+.pagehead{
+    margin: auto;
+    margin-top: 30px;
+    align-content: center;
+    max-width: 800px;
+    background-color: #EF9F9F;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(24, 54, 66);
+
+}
+
+/* Headings for each week*/
+.headings{
+    margin: auto;
+    margin-top: 30px;
+    align-content: center;
+    max-width: 940px;
+    background-color: #EF9F9F;
+    border-width: 1px;
+    border-style:solid ;
+    border-color: #EF9F9F;
+
+}
+
+/* Regular Text*/
+.text{
+    margin: auto;
+    align-content: left;
+    max-width: 900px;
+    background-color: #FFF2F2;
+    padding: 30px;
+}
+
+/* Div to put each of the weekly tasks into */
+.weekstyle{
+    margin: auto;
+    margin-top: 30px;
+    align-content: center;
+    max-width: 900px;
+    background-color: #FFF2F2;
+    padding: 20px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(24, 54, 66);
+}
+
+.project_weekstyle{
+    margin: auto;
+    margin-top: 30px;
+    align-content: left;
+    max-width: 900px;
+    background-color: #FFF2F2;
+    padding: 20px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(24, 54, 66);
+    text-align: left;
+}
+
+
+/* Div when have 2 charts to display for each week */
+.weekstyle2{
+    margin-left:10px;
+    align-content: center;
+    width: 430px;
+    float:left;
+    background-color: #FFF2F2;
+}
+
+/* Setting the apperance of chart- use for standard template the weekly tasks */
+.chart{
+    align-items: center;
+    background-color: white;
+    width:360px;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    
+}
+
+/* Setting the apperance of the Week 8 charts, which we want bigger and centred*/
+.chartweek8{
+    align-items: center;
+    background-color: white;
+    width:650px;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-top: 10px;
+    margin-left: 125px;
+    margin-bottom: 10px;
+}
+
+
+  /* Setting the div for button at the bottom of page */
+.backbutton{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-content: center;
+    max-width: 800px;
+  }
+  
+    /* Button Options */
+    b{
+      border: 15px;
+      border-color: black;
+      border-style: solid;
+      text-align: center;
+      margin-left: 280px;
+    
+     
+  }
+
+  
+  #link{
+      background-color: rgba(115, 98, 138, .9);
+  
+      padding:30px;
+      
+      border:2px;
+      border-color:grey;
+      border-style: solid;
+      border-radius: 10px;
+      margin-left: 290px;
+  
+      font-family: 'Courier New', Courier, monospace;
+      font-weight:700;
+      color:white;
+      
+      text-decoration: none;
+   
+      
+  }
+  
+  #link:hover{
+  
+      background-color: rgba(115, 98, 138, .6);
+  
+      border:2px;
+      border-color:rgb(1, 1, 0);
+      border-style: solid;
+      margin-left: 290px;
+      
+  }
+
+  /* main icon bar */
+.icon-bar {
+    height: 50px;
+    width: 100%;
+    background-color: #F47C7C;
+    overflow: auto;
+}
+
+/* main icon bar */
+.icon-bar a {
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 17px 0;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 15px;
+}
+
+/* hovering on icon bar */
+.icon-bar a:hover {
+    background-color: #EF9F9F;
+}
+
+.bolded { font-weight: bold; }
+

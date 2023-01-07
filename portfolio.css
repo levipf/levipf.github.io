@@ -1,0 +1,209 @@
+/* Richard Davies, Data Science for Economists */
+
+/* This is my second CSS file */
+
+
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+/* Set the background color for my page: */
+
+body{
+    background-color: #FAD4D4
+ }
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1, h2, h3, p{
+    color:rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+} 
+h3{text-decoration: underline;}
+
+/* Page headings for Portfolio and Project */
+.pagehead{
+    margin: auto;
+    margin-top: 30px;
+    align-content: center;
+    max-width: 800px;
+    background-color: #313d5a;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(24, 54, 66);
+
+}
+
+/* Headings for each week*/
+.weektitle{
+    margin: auto;
+    margin-top: 30px;
+    align-content: center;
+    max-width: 940px;
+    background-color: #EF9F9F;
+    border-width: 1px;
+    border-style:solid ;
+    border-color: #EF9F9F;
+
+}
+/* Regular Text*/
+.text{
+    margin: auto;
+    align-content: left;
+    max-width: 900px;
+    background-color: #FFF2F2;
+    padding: 30px;
+}
+
+
+/* Div to put each of the weekly tasks into */
+.weekstyle{
+    margin: auto;
+    margin-top: 30px;
+    align-content: center;
+    max-width: 900px;
+    background-color: #FFF2F2;
+    padding: 20px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(24, 54, 66);
+}
+
+/* Div when have 2 charts to display for each week */
+.weekstyle2{
+    margin-left:10px;
+    align-content: center;
+    width: 430px;
+    float:left;
+    background-color: #FFF2F2;
+}
+
+
+/* Setting the apperance of chart- use for standard template the weekly tasks */
+.chart{
+    align-items: center;
+    background-color: white;
+    width:360px;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    
+}
+
+/* Setting the apperance of the Week 4 chart, which is a standalone*/
+.chartweek4{
+    align-items: center;
+    background-color: white;
+    width:350px;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 275px;
+    margin-bottom: 20px;
+    
+}
+/* Setting the apperance of the the smaller chart- use for the Week 5 task to produce a dashboard */
+.chartweek5{
+    align-items: center;
+    background-color: white;
+    width:250px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+/* Setting the apperance of the Week 8 charts, which we want bigger and centered*/
+.chartweek8{
+    align-items: center;
+    background-color: white;
+    width:650px;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-top: 10px;
+    margin-left: 125px;
+    margin-bottom: 10px;
+}
+
+.chartweek9{
+    align-items: center;
+    background-color: white;
+    width:420px;
+    height:450px;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    
+}
+  
+  #link{
+      background-color: rgba(115, 98, 138, .9);
+  
+      padding:30px;
+      
+      border:2px;
+      border-color:grey;
+      border-style: solid;
+      border-radius: 10px;
+      margin-left: 290px;
+  
+      font-family: 'Courier New', Courier, monospace;
+      font-weight:700;
+      color:white;
+      
+      text-decoration: none;
+   
+      
+  }
+  
+  #link:hover{
+  
+      background-color: rgba(115, 98, 138, .6);
+  
+      border:2px;
+      border-color:rgb(1, 1, 0);
+      border-style: solid;
+      margin-left: 290px;
+      
+  }
+
+  /* main icon bar */
+.icon-bar {
+    height: 50px;
+    width: 100%;
+    background-color: #F47C7C;
+    overflow: auto;
+}
+
+/* main icon bar */
+.icon-bar a {
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 17px 0;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 15px;
+}
+
+/* hovering on icon bar */
+.icon-bar a:hover {
+    background-color: #FAD4D4;
+}

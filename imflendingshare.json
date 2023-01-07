@@ -1,8 +1,8 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-      "text": "Total IMF Credit Outstanding as a Proportion of World GDP (1984-2022)",
-      "subtitle":"Loans disbursed as a proportion of World GDP (in current US$). Sources: IMF, World Bank",
+    "text": "IMF Lending Outstanding as a % of World GDP",
+    "subtitle":"Loans disbursed in SDRs (bn), 1984-2022. Source: IMF",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",

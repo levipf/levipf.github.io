@@ -1,0 +1,26 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "title": {
+          "text": "Current Expenditure (€)",
+          "fontSize": 12,
+          "subtitle":[
+            "Data by autonomous community, 2019. Source: datos.gob.es", "Total spending has been divided by respective regional populations"
+            ],
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10, "anchor": "start"},
+          "data": {"url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/project_investment_tidy.csv"},
+    "mark": "bar",
+    "encoding": {
+      "x": {"aggregate": "sum", "field": "Value", "title":""},
+      "y": {"field": "Autonomous community", "sort": "-x", "title":""},
+      "color": {
+        "field": "Spending", 
+        "scale":{"scheme":"orangered"}},
+      "tooltip": [
+            {"field": "Autonomous community", "title": "Autonomous Community"},
+            {"field": "Spending", "title": "Gini Coefficient"},
+            {"field": "Value", "title": "Spending (€)"}
+          ]
+    }
+  }
+  

@@ -12,7 +12,7 @@
     <title>Document</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="portfolio.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -24,14 +24,25 @@
 
 <body>
     <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
-    <div class="myWeek1">
-        <h1>Data Science 2022 - Levi Freud</h1>
-        <a href="index.html">My Project</a>
-        <a href="https://github.com/levipf">GitHub</a>      
+    <div class="myWeek0">
+        <h1>Data Science 2023 - Levi Freud</h1>   
+    </div>      
 
-        <h3>Week 1:</h3>
-        <p>Embed some interactive charts onto your website.</p>
-
+     <div class="navbuttons">
+        <button class="button" style="vertical-align:middle" onclick="location.href='https://rapidcharts.io/datascience'"><span>About </span></button>
+        <button class="button" style="vertical-align:middle" onclick="location.href='portfolio.html'"><span>Portfolio </span></button>
+        <button class="button" style="vertical-align:middle" onclick="location.href='index.html'"><span>Project </span></button>
+        <button class="button" style="vertical-align:middle" onclick="location.href='https://github.com/levipf/levipf.github.io'"><span>GitHub </span></button>
+    
+    
+    </div>
+    
+    <h3>Week 1: Embedding Charts</h3>
+    
+    <div class="myWeek1">    
+         
+        <container class="bcontainer">
+            
         <h3>Inflation</h3>
         <p>The first chart compares three measures of inflation in the UK.</p>
         <div class="chart" id="chart1"></div>
@@ -43,10 +54,11 @@
         <h3>Unemployment</h3>
         <p>The third chart looks at the unemployment level in the UK</p>
         <div class="chart" id="chart3"> </div>
+        </container>
     </div>    
 
     <div class="myWeek2">
-        <h3>Week 2:</h3>
+        <h3>Week 2: Financial Times Replication</h3>
         <p>Build three live charts and embed them onto your page. Run the first two directly from your GitHub, and deliver the third chart directly through an API.</p>
 
         <h3>Total IMF Credit Outstanding</h3>
@@ -59,7 +71,7 @@
     </div> 
 
     <div class="myWeek3">
-        <h3>Week 3:</h3>
+        <h3>Week 3: Inline data objects and visual encodings</h3>
         <p>Create and embed an original chart, running it directly through an API.</p>
 
         <h3>Covid-19 deaths in England over time</h3>
@@ -68,6 +80,48 @@
 
     </div> 
        
+    <div class="myWeek4">
+        <h3>Week 4:</h3>
+        <p>Implement a data scraper of my own, and make a chart out of it.</p>
+
+        <h3>Crime in Bristol over time</h3>
+        <div class="chart" id="chart7"></div>
+
+
+    </div> 
+
+
+    <div class="myWeek5">
+        <h3>Week 5:</h3>
+        <p>[x]</p>
+
+        <h3>[x]</h3>
+        <div class="grid-container" style = "display: grid;">
+            <div class="grid-item"><div class = dashchart id = "chart8" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "chart9" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "chart10" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "chart11" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "chart12" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "chart13" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "chart14" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "chart15" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "chart16" style = "display: block;"></div></div>
+        </div>
+        
+    <div class="myWeek7">
+            <h3>Week 7:</h3>
+            <p>Implement two maps</p>
+    
+            <h3>Base-map of Spain</h3>
+            <div class="chart" id="chart17"></div>
+
+            <h3>Unemployment by Region</h3>
+            <div class="chart" id="chart18"></div>
+    
+    
+        </div> 
+
+    </div> 
 </body>
 
 
@@ -79,6 +133,20 @@
     var myChart4 = "imflending.json"
     var myChart5 = "imflendingshare.json"
     var myChart6 = "covid_cases.json"
+    var myChart7 = "bristol_crime.json"
+    var myChart8 = "ONS-EQQ6.json"
+    var myChart9 = "ONS-KHI3.json"
+    var myChart10 = "ONS-L62U.json"
+    var myChart11 = "ONS-M9VU.json"
+    var myChart12 = "ONS-N4J2.json"
+    var myChart13 = "ONS-NFDB.json"
+    var myChart14 = "ONS-NFEU.json"
+    var myChart15 = "ONS-NPOX.json"
+    var myChart16 = "ONS-NYQD.json"
+    var myChart17 = "just_spain_map.json"
+    var myChart18 = "all_spain_education.json"
+
+
 
  // Embed charts:
  vegaEmbed('#chart1', myChart1);
@@ -87,6 +155,18 @@
  vegaEmbed('#chart4', myChart4);
  vegaEmbed('#chart5', myChart5);
  vegaEmbed('#chart6', myChart6);
+ vegaEmbed('#chart7', myChart7);
+ vegaEmbed('#chart8', myChart8);
+ vegaEmbed('#chart9', myChart9);
+ vegaEmbed('#chart10', myChart10);
+ vegaEmbed('#chart11', myChart11);
+ vegaEmbed('#chart12', myChart12);
+ vegaEmbed('#chart13', myChart13);
+ vegaEmbed('#chart14', myChart14);
+ vegaEmbed('#chart15', myChart15);
+ vegaEmbed('#chart16', myChart16);
+ vegaEmbed('#chart17', myChart17);
+ vegaEmbed('#chart18', myChart18);
 
 
 </script>

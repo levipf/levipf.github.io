@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 250,
+  "height": 300,
+  "view": {"stroke": "transparent"},
+  "title": {
+    "text": "Income Inequality Across Spain",
+    "fontSize": 12,
+    "subtitle": [
+      "Income by autonomous community, 2010-2021.", "Source: Instituto Nacional de Estadistica, 2021"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 2010,
+        "max": 2021,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/project_income_tidy.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.Year == yearSelector"},
+    {
+      "lookup": "Autonomous community",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/project/spain_geojson.json",
+          "format": {"property": "features"}
+        },
+        "key": "properties.name",
+        "fields": ["properties", "type", "geometry"]
+      }
+    }
+  ],
+  "projection": {"type": "mercator"},
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "Mean Income",
+      "legend": {"title": "Income", "orient": "right", "direction": "vertical"},
+      "type": "quantitative",
+      "scale": {"scheme": "lightgreyred"}
+    },
+    "tooltip": [
+      {"field": "properties.name", "title": "Autonomous community"},
+      {"field": "Mean Income", "title": "Average Income", "format": ",d"}
+    ]
+  }
+}

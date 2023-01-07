@@ -1,0 +1,57 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "title": {
+      "text": "Gross Gambling Yield (£m)",
+      "subtitle": "Source: Gambling Commission",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/gamblingstats.csv"
+    },
+    "repeat": {
+      "layer": ["Overall Total", "Arcades (non-remote)", "Betting (non-remote)", "Bingo (non-remote)", "Casino (non-remote)", "Betting (remote)", "Bingo (remote)", "Casino (remote)", "Lotteries (remote and non-remote)", "The National Lottery (remote and non-remote)"]
+    },
+    "spec": {
+      "mark": {"type": "line",
+      "point": {
+        "filled": false,
+        "fill": "white"
+        }
+        },
+      "encoding": {
+        "x": {
+          "field": "Reporting Period",
+              "axis": {"title": "Year", "grid": false, "ticks": false, "labelAngle": 45}
+  },
+        
+        "tooltip": [
+        {"field": "Reporting Period"},
+        {"field": "Overall Total", "type": "quantitative"},
+        {"field": "Arcades (non-remote)", "type": "quantitative"},
+        {"field": "Betting (non-remote)", "type": "quantitative"},
+        {"field": "Bingo (non-remote)", "type": "quantitative"},
+        {"field": "Casino (non-remote)", "type": "quantitative"},
+        {"field": "Betting (remote)", "type": "quantitative"},
+        {"field": "Bingo (remote)", "type": "quantitative"},
+        {"field": "Casino (remote)", "type": "quantitative"},
+        {"field": "Lotteries (remote and non-remote)", "type": "quantitative"},
+        {"field": "The National Lottery (remote and non-remote)", "type": "quantitative"}
+  
+      ],
+        "y": {
+          "aggregate": "mean",
+          "field": {"repeat": "layer"},
+          "type": "quantitative",
+          "title": ""
+        },
+        "color": {
+          "datum": {"repeat": "layer"},
+          "type": "nominal"
+        }
+      }
+    }
+  }
+  

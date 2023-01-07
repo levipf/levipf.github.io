@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+    <title>Levi's Project</title>
+
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="project.css">
+
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+
+<body>
+
+    <div class="icon-bar">
+        <a href="index.html">HOME</a>
+        <a href="project.html">PROJECT</a>
+        <a href="portfolio2.html">PORTFOLIO</a>
+        <a href="https://github.com/Levipf/Levipf.github.io">GITHUB</a>
+        <a href="https://rapidcharts.io/datascience">COURSE</a>
+    </div>
+
+<body>
+
+
+<body>
+
+   <!-- Creating the title-->
+   
+    <hr class="solid">
+    
+    <div class="headings">
+        <h2>Education – Can it Reduce Income Inequality in Spain?</h2>
+    </div>
+
+    <div class="project_weekstyle">
+
+    <p>There are two main reasons why this is a topic of interest to me:</p> 
+    <ol>
+        <li>Having studied Spanish and Spain in school, I became acutely aware of Spain’s unequal income distribution</li>
+        <li>Choosing to pursue higher education wasn’t always my plan, but I am interested in the education-income link.</li>
+    </ol>
+   
+    <p>Therefore, my main aims of this project are to analyse:</p>
+    <ul>
+        <li>Spain’s national income inequality</li>
+        <li>Spain’s regional income inequality</li>
+        <li>Correlations between education and income/poverty, and then make an informed suggestion to the government about how they can combat their problem.</li>
+    </ul>
+
+
+    <p>A country’s Gini coefficient measures their income inequality; in 2019, Spain’s (ESP) Gini Coefficient was 33. Figure 1 shows that in 2019, Spain had the 5th highest out of the 27 EU countries. To get this data, I <em>scraped</em> a <a href="https://sciendo.com/pdf/10.2478/eoik-2021-0007">pdf</a> file in <a href="https://colab.research.google.com/drive/1SCsXFbS-QjsbZIeZo-2i0BZv1XkWcKW9#scrollTo=t36pkrzUAlmE">Python</a> ; this involved a lot of fiddling around (shown in my code) as I wasn’t used to the process. The 2019 data, albeit informative, does not provide any information about whether this is a new phenomenon in Spain, or whether the situation is improving.</p>
+    
+    <h3> Figure 1</h3>
+    
+    <div class="chartweek8" id="chart101"> </div>
+    
+    <p>Figure 2 however, uses <a href="https://gateway.euro.who.int/en/indicators/hfa_617-0280-gini-coefficient-income-distribution/">WHO</a> data to show how Spain has had a consistently high Gini coefficient over time compared to its EU counterparts. I found this heat-map to neatly display the data compared with a congested line chart. From 1995-2019, the coefficient has only changed by 1 point, but by no means has the coefficient remained steady. Despite a promising reduction from 36.2-33.0 (2015-2019), I’m hesitant that the fall may not last given previous trends. From 1997-2002, Spain’s level of income inequality quickly improved, but then deteriorated for a sustained period until 2015. To avoid repeating the 2002-15 period, I think that Spain shouldn't be getting complacent.</p>
+
+    <h3> Figure 2</h3>
+    
+         <div class="chartweek8" id="chart102"> </div>
+
+    <p>	This heat-map was my most challenging chart to make. Firstly, I gathered all EU country codes and batch-downloaded the relevant data in <em>Python</em> using <a href="https://colab.research.google.com/drive/1Rgc4UPslpQUzvj7SVG3aYCtmfEB97MmS#scrollTo=_l3Zt3oPoVti">API</a> links; this was done to ensure annual data <em>replication/automation</em> was feasible. To avoid needing much human input, my aim was to compile 27 country’s data into one CSV but using Python instead of Excel manually. After extensive research and fiddling around, I was finally successful. This means that whenever there’s new data, I will only have to re-run my Python code and update my GitHub to update the chart!</p>
+            
+
+
+<p>Whilst whole-country income-inequality data is useful, I wanted to delve deeper into the problem and uncover any underlying income-inequality across different autonomous communities in Spain. After finding a regional <em>GEOJSON</em> for Spain and adding it to my <a href="https://github.com/levipf/levipf.github.io/blob/project/spain_geojson.json">GitHub</a>, I cleaned the data that I extracted from <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=9949&L=1">INE</a> with <a href="https://colab.research.google.com/drive/1ZMZCR1p913UHAFQF8wB3Oj2RwdjqJ3-I">Python</a> to convert it into tidy form, and then layered it over the base-map in Vega. Figure 3 shows immmense differences between household incomes across regions; it visually demonstrates how over time, the ‘richer’ communities have been getting richer, whilst the ‘poorer’ communities haven’t.</p>
+<p>Having studied economics, I was aware of the education-income link, a big reason why many students decide to pursue university. It’s possible that in Spain, education inequality across autonomous communities is driving the income inequality. Accordingly, I coded Figure 4 with a dropdown box for seven different levels of education. The map contains considerable amounts of information, also from <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=9453&L=1">INE</a> , but for me the most striking was the vast differences between the illiterate and higher education percentages in some communities.</p>
+
+     <div class="weekstyle2">
+        <h3>Figure 3</h3>
+        <div class="chart" id="chart103"></div>
+     </div>
+
+     <div class="weekstyle2">
+        <h3>Figure 4</h3>
+     <div class="chart" id="chart104"></div>
+    </div>
+
+
+    <p>When looking at the maps side-by-side, it seems that the communities with lowest incomes also have higher illiteracy rates, and vice versa. However, to support the economics argument that going to university and pursuing higher education should increase income, I thought it important to home in on the higher education data.</p>
+    <p>Once I had both higher education and income data for the autonomous communities in Spain, I wanted to finally assess the education-income link. To do this, I used <a href="https://colab.research.google.com/drive/1NMTV6bGybTlM5_8pknZhIG0YCErfFRHO#scrollTo=AIV1mojCQTkB">Python</a> to merge and stack the two datasets, and then Vega to run the regression. In Figure 5, an R² value of 0.41 implies a relatively strong positive correlation between the two variables.</p>
+
+        <h3> Figure 5</h3>
+    
+        <div class="chartweek8" id="chart105"> </div> 
+
+        <p>To see if this relationship works both ways, I extracted ‘risk-of-poverty’ data from <a href="https://datos.gob.es/en/catalogo/ea0010587-tasa-de-riesgo-de-pobreza-por-comunidades-autonomas-anual-encuesta-de-condiciones-de-vida-ecv-identificador-api-9963">datos.gob.es</a> to see any possible correlation with community’s illiterate population percentage. An R² value of 0.72 is high, indicating two highly correlated variables in Figure 5. </p>
+        <p>	With this data, I hypothesised that: more illiterate communities with higher risks of poverty of would be low-income communities and vice versa. This may seem obvious, but often high-income communities are the most unequal, and have the highest poverty rates. To test this, I used <a href="https://colab.research.google.com/drive/1WmQQD0QAFgr1j3SqxxXuCDAt3mRzVM4v#scrollTo=H_Exmfwafqbi">kmeans</a> clustering in <em>Python</em> to try and detect two clusters in the data. Two clear clusters emerged. When analysing the ‘hypothesised high-income community’ data, I observed that 8/10 communities featured in the top 10 highest income communities in 2021. The kmeans clustering allowed me to observe a link between illiteracy and risk-of-poverty with income. One must view the R² statistic and clustering with caution given the small sample size.</p>
+
+    <h3> Figure 6</h3>
+    
+        <div class="chartweek8" id="chart106"> </div> 
+
+        <p>Despite only showing correlations, by looking at both ends of the spectrum, I have tried to deduce some form of causality. Whilst pursuing higher education doesn’t guarantee high income and being illiterate doesn’t guarantee being at risk of poverty, both the economics and data hint towards the benefits of education. Therefore, it seems plausible to suggest that to reduce income inequality in Spain, the government should look at reducing education inequality across all regions.</p>
+
+    </div>
+
+    <div class="headings">
+        <h2>References</h2>
+    </div>
+
+    <div class="weekstyle">            
+        <p> <a href="https://sciendo.com/pdf/10.2478/eoik-2021-0007">Sciendo - 2019 Gini data</a></p>
+        <p> <a href="https://gateway.euro.who.int/en/indicators/hfa_617-0280-gini-coefficient-income-distribution/">World Health Organization - 1995-2019 Gini data </a> </p>
+        <p> <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=9949&L=1">Instituto Nacional de Estadistica - income data</a> </p>
+        <p> <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=9453&L=1">Instituto Nacional de Estadistica - education data</a> </p>
+        <p> <a href="https://datos.gob.es/en/catalogo/ea0010587-tasa-de-riesgo-de-pobreza-por-comunidades-autonomas-anual-encuesta-de-condiciones-de-vida-ecv-identificador-api-9963">datos.gob.es - risk-of-poverty data</a> </p>
+
+    </div>
+
+
+
+</body>
+
+
+
+
+<script>
+    //Define charts:
+    var myChart101 = "project_scraped.json";
+    var myChart102 = "project_heatmap.json";
+    var myChart103 = "project_income.json";
+    var myChart104 = "project_education.json";
+    var myChart105 = "project_regression.json";
+    var myChart106 = "cluster_and_regression.json";
+
+
+    // Embed charts:
+    vegaEmbed('#chart101', myChart101);
+    vegaEmbed('#chart102', myChart102);
+    vegaEmbed('#chart103', myChart103);
+    vegaEmbed('#chart104', myChart104);
+    vegaEmbed('#chart105', myChart105);
+    vegaEmbed('#chart106', myChart106);    
+
+</script>
+    
+
+</html>
