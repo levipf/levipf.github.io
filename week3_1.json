@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A simple bar chart with embedded data.",
     "title": {
-      "text": "Intentional Homocides",
-      "subtitle": "Top 10 countries with highest no. of intentional homocides (per 100,000 people). Source: World Bank",
+      "text": "Intentional Homicides",
+      "subtitle": "Top 10 countries with highest no. of intentional homicides (per 100,000 people). Source: World Bank",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
       "anchor": "start",
