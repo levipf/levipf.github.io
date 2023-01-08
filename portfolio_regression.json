@@ -21,13 +21,13 @@
           "field": "0_right",
           "type": "quantitative",
           "scale": {"domain": [15, 45]},
-          "axis": {"title": "Education", "grid": false}
+          "axis": {"title": "Higher Education%", "grid": false}
         },
         "y": {
           "field": "0",
           "type": "quantitative",
           "scale": {"domain": [18000, 43000]},
-          "axis": {"title": "Income", "grid": false}
+          "axis": {"title": "Household Income (€)", "grid": false}
         }
       }
     },

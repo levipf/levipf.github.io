@@ -210,3 +210,9 @@ h3{text-decoration: underline;}
 .icon-bar a:hover {
     background-color: #EF9F9F;
 }
+
+.centerImage
+{
+ text-align:center;
+ display:block;
+}
