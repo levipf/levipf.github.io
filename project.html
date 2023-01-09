@@ -64,7 +64,7 @@
     
          <div class="chartweek8" id="chart102"> </div>
 
-    <p>	This heat-map was my most challenging chart to make. Firstly, I gathered all EU country codes and batch-downloaded the relevant data in <em>Python</em> using <a href="https://colab.research.google.com/drive/1Rgc4UPslpQUzvj7SVG3aYCtmfEB97MmS#scrollTo=_l3Zt3oPoVti">API</a> links to ensure annual data <em>replication/automation</em> was feasible. To avoid needing much human input, my aim was to compile 27 country’s data into one CSV using Python instead of Excel manually. After extensive research and fiddling around, I was finally successful. Now whenever there’s new data, I will only have to re-run my Python code and update my GitHub to refresh the chart!</p>     
+    <p>	This heat-map was my most challenging chart to make. Firstly, I gathered all EU country codes and batch-downloaded the relevant data in <em>Python</em> using <a href="https://colab.research.google.com/drive/1Rgc4UPslpQUzvj7SVG3aYCtmfEB97MmS#scrollTo=_l3Zt3oPoVti">API</a> links to ensure annual data <em>replication/automation</em> was feasible. To avoid needing much human input, my aim was to compile 27 country’s data into one CSV using Python instead of Excel manually. After extensive Python research and fiddling around, I was finally successful. Now whenever there’s new data, I will only have to re-run my Python code and update my GitHub to refresh the chart!</p>     
             
 
 <p>Whilst whole-country income-inequality data is useful, I wanted to delve deeper into the problem and uncover any underlying income-inequality across different autonomous communities in Spain. After finding a regional <em>GEOJSON</em> for Spain and adding it to my <a href="https://github.com/levipf/levipf.github.io/blob/project/spain_geojson.json">GitHub</a>, I cleaned the data that I extracted from <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=9949&L=1">INE</a> with <a href="https://colab.research.google.com/drive/1ZMZCR1p913UHAFQF8wB3Oj2RwdjqJ3-I">Python</a> to convert it into tidy form, and then layered it over the base-map in Vega. Figure 3 shows immense differences between household incomes across regions; it also demonstrates how over time, the ‘poorer’ communities haven’t been getting richer while the ‘richer’ communities have.</p>
@@ -93,6 +93,7 @@
         <div class="chartweek8" id="chart106"> </div> 
 
         <p>Despite only showing correlations, by looking at both ends of the spectrum, I have tried to deduce some form of causality. Whilst pursuing higher education doesn’t guarantee high income and being illiterate doesn’t guarantee being at risk of poverty, both the economics and data hint towards the benefits of education. Therefore, it seems plausible to suggest that to reduce income inequality in Spain, the government should look at reducing education inequality across all regions.</p>
+        <p>Further work should explore this more, for example use machine learning and multivariate regressions to establish a more causal link between education and income.</p>
 
     </div>
 
