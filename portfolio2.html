@@ -99,8 +99,7 @@
 
 
 
-        <p> I changed from bar to line chart as this makes it easier to track a country's homicides over time, and it's easier to compare different countries.
-         </p>
+        <p> I changed from bar to line chart as this makes it easier to track a country's homicides over time, and to compare between different countries. </p>
     
 
     </div>
@@ -118,7 +117,7 @@
 
         <h3>Top 20 Happiest Countries 2021 </h3>
         <div class="chartweek4" id="chart7"></div>
-        <p>This chart uses an html scraper of a table displayed online by World Population Review. I chose this website becase it was clearly coded, and easy to copy and save as an html, and then read in pandas</p>
+        <p> I chose this website becase it was clearly coded, and easy to copy and save as an html, and then read in pandas</p>
        
         
     </div>
@@ -181,7 +180,7 @@
                 <p> This weeks task was to produce two charts that support or refute an argument at the
                     Festival of Economics. </p>
     
-                    <p>In the crypto conference, it was argued that many people turned to crypto as a form of gambling over lockdown, to replace
+                    <p>It was argued that many people turned to crypto as a form of gambling over lockdown, to replace
                         the lack of sports/casino gambling available.
                     </p>
         
@@ -194,10 +193,8 @@
         
         
     
-                <p> I created two charts in support of this statement. The first chart shows a clear reduction in gambling from Apr 20 - Mar 21, 
-                    mostly derived from less betting. The second chart uses crypto google searches as a proxy for crypto usage, and shows a drastic 
-                    inrease by May 2021, when Covid was rife.</p>
-            
+                <p> The charts show a large decline (mostly from betting) in gambling Apr20-Mar21 (Covid-times), and crypto google searches gaining popularity during Covid. </p>
+                                
 
             </div>
 
@@ -239,11 +236,12 @@
 
 
         <h3>Unsupervised Learning - kmeans clustering </h3>
-        <p>Hypothesis: using HDI and GDP-per-capita data for all countries, creating 3 clusters would group the countries into less developed, developing, and more developed countries.</p>
+        <p>Hypothesis: All cities in France can be clustered by their latitude and longitude into their respective regions</p>
         <p>I used Python in 
-            <a href="https://colab.research.google.com/drive/1MMi6EMw3xnM4IlVqk7khSQiBcj5R2iaE#scrollTo=PkmguzR-KEfa" target="_blank">Google Colab</a>.</p>
+            <a href="https://colab.research.google.com/drive/1hk2x6o-TB9L9AX1mJ_CNlVrZS0OCR4ii#scrollTo=Q-Fm2FSnANdE" target="_blank">Google Colab</a>.</p>
         <div class="chartweek8" id="chart23"></div>
-        <p>I don't think the clustering groups I suggested are a good fit (e.g UK is a more-developed country). Too many countries are classified as less-developed instead of developing.</p>
+        <p>The kmeans clustering hasn't been fully successful - for example the two green clusters (bottom right) should be separate.</p>
+        <p>This is why I haven't labelled the clusters.</p>
 
  
         <h3>Supervised Learning - simple linear regression </h3>
@@ -251,8 +249,7 @@
         <p>I used Python in <a href="https://colab.research.google.com/drive/1-ZgYdDd6-0FqhKcwF5EEFRjgwYGjSHkO#scrollTo=TtMMzq01TZPi">Google Colab</a> </p> 
         <center><img src="supervised.jpg" alt="Supervised Regression"></center>
  
-        <p>There is a reasonably positive relationship between Higher Education and Household Income (R²=0.41). It makes sense that increasing Higher Education by 1% could increase household income by 565€ in Spain.</p>
-    
+        <p>Higher Education and Household Income have a positive correlation (R²=0.41). It seems fitting that increasing Higher Education by 1% could increase household income by 565€.</p>   
 
     </div>   
 
@@ -283,7 +280,7 @@
     var myChart20 = "cryptosearch.json"
     var myChart21 = "portfolio_regression.json"
     var myChart22 = "emmissions.json"
-    var myChart23 = "kmeans.json"
+    var myChart23 = "france_cluster.json"
 
 
 

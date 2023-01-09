@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/levipf/levipf.github.io/main/region_cluster%20(2).csv"
+    },
+    "width":450,
+    "height": 300,
+    "title": {
+      "text": "French Regions",
+      "subtitle": ["Source: Simple Maps"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "navy"
+    },
+    "mark": {"type": "point", "filled": true, "size": 100, "opacity": 0.8},
+    "encoding": {
+      "x": {
+        "field": "lng",
+        "title": "Longitude",
+        "type": "quantitative",
+        "scale": {"zero": false},
+        "axis": {"grid": false}
+      },
+      "y": {
+        "field": "lat",
+        "title": "Latitude",
+        "type": "quantitative",
+        "scale": {"zero": false},
+        "axis": {"grid": false}
+      },
+      "color": {
+        "field": "region_clusters",
+        "title": "13 French Regions",
+        "type": "nominal",
+        "legend": {
+          "labelExpr": "{'0': 'a','1': 'a', '2': 'a', '3': 'a','4': 'a','5': 'a','6': 'a','7': 'a','8': 'a', '9': 'a','10':'a','11': 'a', '12': 'a'}[datum.label]"
+        }
+      },
+      "tooltip": [{"field": "city", "type": "nominal", "title": "French City"}]
+    }
+  }
